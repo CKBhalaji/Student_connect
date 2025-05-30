@@ -53,7 +53,7 @@ function App() {
           <main className="main-content">
             <Routes>
               {/* Home Pages */}
-              <Route path="/" element={<Home />} />
+              <Route path="/Student_connect" element={<Home />} />
               <Route path="/login" element={<Login />} />
               <Route path="/register" element={<Register />} />
               {/* Admin Pages */}
