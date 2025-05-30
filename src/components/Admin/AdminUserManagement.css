@@ -1,0 +1,184 @@
+.AUM-admin-user-management {
+  /* padding: 20px; */
+  max-width: 1200px;
+  margin: 70px auto;
+  padding: 20px;
+}
+
+.AUM-admin-user-management .ant-input {
+  background-color: white !important;
+  color: black !important;
+}
+
+.AUM-user-management-header {
+  display: flex;
+  justify-content: space-between;
+  /* align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+  gap: 15px; */
+  margin-bottom: 20px;
+  color: white;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1a365d 0%, #1890ff 100%);
+  border-radius: 8px;
+}
+
+.AUM-user-management-header h1 {
+  display: flex;
+  font-size: 2.5rem;
+  /* margin-bottom: 10px; */
+  font-weight: 700;
+}
+
+.AUM-page-title {
+  /* margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px; */
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.AUM-header-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.AUM-add-user-button {
+  padding: 10px 20px;
+    background: var(--primary-gradient);
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: all 0.2s ease;
+}
+
+.AUM-add-user-button:hover {
+  background: linear-gradient(to bottom right, #1d4ed8, #0891b2, #14b8a6);
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.2);
+}
+
+.AUM-header-actions button {
+  color: white;
+}
+
+.AUM-search-bar {
+  width: 300px;
+}
+
+.AUM-users-table {
+  margin-top: 20px;
+}
+
+.AUM-user-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.AUM-user-avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #f0f2f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+}
+
+.AUM-user-name {
+  font-weight: 500;
+}
+
+.AUM-user-email {
+  color: #666;
+  font-size: 0.AUM-85rem;
+}
+
+.AUM-user-form .AUM-form-group {
+  margin-bottom: 20px;
+}
+
+.AUM-user-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.AUM-user-form .AUM-ant-input,
+.AUM-user-form .AUM-ant-select {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .AUM-user-management-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .AUM-header-actions {
+    width: 100%;
+  }
+  
+  .AUM-search-bar {
+    width: 100%;
+  }
+}
+
+/* Table responsive styles */
+.AUM-table-container {
+  margin: 16px 0;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.AUM-responsive-table {
+  min-width: 800px; /* Ensures table maintains minimum width on mobile */
+}
+
+/* Mobile optimizations */
+@media (max-width: 768px) {
+  .AUM-table-container {
+    margin: 8px -12px;
+    padding: 0 12px;
+  }
+
+  .ant-table {
+    font-size: 14px;
+  }
+
+  .ant-table-thead > tr > th,
+  .ant-table-tbody > tr > td {
+    padding: 8px 12px;
+    white-space: nowrap;
+  }
+
+  /* Optimize action buttons spacing */
+  .ant-space {
+    gap: 8px !important;
+  }
+
+  .ant-btn {
+    padding: 4px 8px;
+    height: 32px;
+  }
+
+  /* Status tag responsive */
+  .ant-tag {
+    margin: 4px 0;
+    padding: 0 8px;
+  }
+
+  /* Search input responsive */
+  .ant-input-search {
+    margin-bottom: 12px;
+  }
+}
+
+/* Ensure table header sticks on scroll */

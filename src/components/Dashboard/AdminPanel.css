@@ -1,0 +1,270 @@
+.AP-admin-panel {
+  max-width: 1200px;
+  margin: 70px auto;
+  padding: 20px;
+}
+
+.AP-admin-header {
+  /* margin-bottom: 24px; */
+  text-align: center;
+  margin-bottom: 24px;
+  color: white;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1a365d 0%, #1890ff 100%);
+  border-radius: 8px;
+}
+
+.AP-admin-header h1 {
+  /* font-size: 24px;
+  margin-bottom: 8px; */
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.AP-admin-header p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.AP-profile-card {
+  margin-bottom: 24px;
+}
+
+.AP-profile-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  /* color: white; */
+}
+
+.AP-avatar-upload {
+  position: relative;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.AP-profile-avatar {
+  background-color: #1890ff;
+  margin-bottom: 16px;
+}
+
+.AP-avatar-upload-btn {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+}
+
+.AP-profile-info {
+  width: 100%;
+}
+
+.AP-profile-info .AP-ant-descriptions-item-label {
+  font-weight: 500;
+}
+
+.AP-stats-row {
+  margin-bottom: 24px;
+}
+
+.AP-stat-card {
+  border-radius: 8px;
+  text-align: center;
+}
+
+.AP-stat-card .AP-ant-statistic-title {
+  font-size: 14px;
+  /* color: rgba(0, 0, 0, 0.45); */
+}
+
+.AP-section-header {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.AP-section-icon {
+  font-size: 18px;
+  color: #1890ff;
+}
+
+.AP-section-actions {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}
+
+.AP-search-input {
+  width: 200px;
+}
+
+.AP-management-card {
+  margin-bottom: 24px;
+}
+
+.AP-user-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.AP-user-avatar {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  /* background-color: #f0f2f5; */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.AP-user-name {
+  font-weight: 500;
+}
+
+.AP-user-email {
+  color: #666;
+  font-size: 12px;
+}
+
+.AP-job-title {
+  font-weight: 500;
+}
+
+.AP-job-company {
+  color: #666;
+  font-size: 12px;
+}
+
+@media (max-width: 992px) {
+  .AP-section-actions {
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .AP-search-input {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .AP-admin-panel {
+    padding: 20px;
+  }
+
+  .AP-responsive-table {
+    margin: 8px -12px;
+    /* min-width: 800px; */
+  }
+
+  .stats-row .ant-col {
+    margin-bottom: 16px;
+    /* min-width: 800px;  } */
+}
+}
+/* .AP-responsive-modal {
+  min-width: 800px;
+} */
+
+/* @media (min-width: 769px) {
+  .ant-table-content {
+    overflow: visible;
+  }
+*/
+.ant-card .ant-card-body{
+  background-color: var(--card-bg);
+  color: var(--text-dark);
+}
+
+/* Add these styles to your existing CSS */
+
+/* Text color */
+.AP-admin-panel {
+  color: var(--text-blue);
+}
+
+/* Cards */
+.AP-management-card,
+.AP-stat-card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+/* Form elements in modals */
+/* .AP-responsive-modal .ant-input,
+.AP-responsive-modal .ant-select-selector {
+  background-color: var(--search-bg) !important;
+  color: var(--search-text) !important;
+  border-color: var(--border-color) !important;
+} */
+
+.AP-responsive-modal .ant-input::placeholder {
+  color: #666 !important;
+}
+
+/* Status tags */
+.AP-management-card .ant-tag {
+  background-color: var(--section-bg) !important;
+  color: var(--text-blue) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Profile Section */
+.AP-profile-section {
+  color: var(--text-dark);
+}
+
+.AP-profile-card {
+  background-color: var(--card-bg);
+  border-color: var(--border-color);
+}
+
+.AP-profile-card .ant-card-head {
+  border-bottom-color: var(--border-color);
+  color: var(--text-dark);
+}
+
+.AP-profile-info .ant-descriptions-item-label {
+  color: var(--text-dark)!important;
+  opacity: 0.8;
+}
+
+.AP-profile-detail {
+  color: var(--text-dark) !important;
+}
+
+.AP-profile-card .ant-card-extra {
+  color: var(--text-dark);
+}
+
+.AP-avatar-upload-btn .ant-btn {
+  background-color: var(--section-bg);
+  color: var(--text-dark);
+  border-color: var(--border-color);
+}
+
+.AP-profile-card .ant-form-item-label > label {
+  color: var(--text-dark);
+}
+
+.AP-admin-panel .ant-statistic .ant-statistic-title {
+  color: var(--text-dark);
+}
+.AP-admin-panel .ant-statistic .ant-statistic-content {
+  color: var(--text-dark);
+}
+
+.AP-admin-panel .ant-descriptions .ant-descriptions-item-content {
+  color: var(--text-dark);
+}
+
+.AP-admin-panel .ant-input {
+  background-color: white !important;
+  color: black !important;
+}
+
+.ant-btn-variant-solid {
+  color: #2563eb!important;
+  background: #1677ff;
+}

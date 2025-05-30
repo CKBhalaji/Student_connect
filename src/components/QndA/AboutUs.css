@@ -1,0 +1,246 @@
+.AU-about-us-container {
+  max-width: 1200px;
+  margin: 70px auto;
+  padding: 20px;
+}
+
+/* Hero Section */
+.AU-about-hero {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1a365d 0%, #1890ff 100%);
+  border-radius: 8px;
+  color: white;
+}
+
+.AU-hero-title {
+ 
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+.AU-about-hero p{
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* .AU-hero-subtitle {
+  font-size: 1.2rem;
+  color: #666;
+} */
+
+/* Mission Section */
+.AU-mission-card {
+  margin-bottom: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.AU-mission-content {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px;
+}
+
+.AU-mission-icon {
+  font-size: 32px;
+  color: #1890ff;
+  margin-top: 5px;
+}
+
+/* Stats Section */
+.AU-stats-row {
+  margin-bottom: 30px;
+}
+
+.AU-stat-card {
+  text-align: center;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.AU-stat-icon {
+  font-size: 28px;
+  color: #1890ff;
+  margin-bottom: 10px;
+}
+
+.AU-stat-card .AU-ant-typography {
+  margin: 0;
+  color: #1a365d;
+}
+
+/* Story Section */
+.AU-story-section {
+  margin: 40px 0;
+  padding: 0 20px;
+}
+
+/* Timeline Section */
+.AU-timeline-section {
+  margin: 50px 0;
+  padding: 20px;
+}
+
+.AU-timeline {
+  position: relative;
+  padding-left: 30px;
+  margin-top: 30px;
+}
+
+.AU-timeline::before {
+  content: '';
+  position: absolute;
+  left: 7px;
+  top: 0;
+  bottom: 0;
+  width: 2px;
+  background: #1890ff;
+}
+
+.AU-timeline-item {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.AU-timeline-year {
+  position: absolute;
+  left: -30px;
+  top: 0;
+  width: 24px;
+  height: 24px;
+  line-height: 24px;
+  text-align: center;
+  background: #1890ff;
+  color: white;
+  border-radius: 50%;
+  font-weight: bold;
+  font-size: 12px;
+}
+
+.AU-timeline-event {
+  padding-left: 30px;
+  color: #666;
+}
+
+/* Team Section */
+.AU-team-section {
+  margin: 50px 0;
+  text-align: center;
+}
+
+.AU-team-subtitle {
+  display: block;
+  margin-bottom: 30px;
+  color: #666;
+}
+
+.AU-team-card .AU-ant-card-cover img {
+  height: 200px;
+  object-fit: cover;
+}
+
+.AU-team-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+  height: 100%;
+}
+
+.AU-team-card:hover {
+  transform: translateY(-5px);
+}
+
+.AU-team-bio {
+  margin-top: 10px;
+  color: #666;
+  font-size: 14px;
+}
+
+/* Values Section */
+.AU-values-section {
+  margin: 50px 0;
+}
+
+.AU-value-card {
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.AU-value-card .AU-ant-typography {
+  color: #1a365d;
+}
+
+/* CTA Section */
+.AU-cta-section {
+  margin: 50px 0;
+}
+
+.AU-cta-card {
+  text-align: center;
+  padding: 40px;
+  border-radius: 8px;
+  /* background: linear-gradient(135deg, #f5f7fa 0%, #e4e8eb 100%); */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.AU-cta-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 30px;
+}
+
+.AU-cta-button {
+  padding: 10px 25px;
+  border-radius: 4px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.3s;
+}
+
+.AU-cta-button.AU-student {
+  background: #1890ff;
+  color: white;
+}
+
+.AU-cta-button.AU-recruiter {
+  background: white;
+  color: #1890ff;
+  border: 1px solid #1890ff;
+}
+
+.AU-cta-button:hover {
+  opacity: 0.8;
+  transform: translateY(-2px);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .AU-about-hero {
+    padding: 20px 10px;
+  }
+  
+  .AU-mission-content {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .AU-cta-buttons {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .AU-team-card .AU-ant-card-cover img {
+    height: 150px;
+  }
+}
+
+.AU-about-us-container .ant-typography {
+  color: var(--text-dark);
+}

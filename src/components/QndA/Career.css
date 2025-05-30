@@ -1,0 +1,225 @@
+.CR-career-container {
+  max-width: 1200px;
+  margin: 90px auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.CR-career-hero {
+  /* background: linear-gradient(135deg, #1a365d 0%, #1890ff 100%);
+  color: white;
+  padding: 80px 20px;
+  text-align: center;
+  border-radius: 8px;
+  margin-bottom: 60px; */
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1a365d 0%, #1890ff 100%);
+  border-radius: 8px;
+}
+
+.CR-hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.CR-hero-title {
+  color: white !important;
+  margin-bottom: 20px;
+}
+
+.CR-hero-subtitle {
+  color: rgba(255, 255, 255, 0.85);
+  font-size: 1.2rem;
+  margin-bottom: 30px;
+}
+
+.CR-hero-button {
+  background: white;
+  color: #1890ff;
+  border: none;
+  font-weight: 500;
+}
+
+.CR-hero-button:hover {
+  background: #f0f0f0 !important;
+  color: #1890ff !important;
+}
+
+/* Section Styling */
+.CR-section {
+  margin-bottom: 60px;
+}
+
+.CR-section-title {
+  text-align: center;
+  color: #1a365d;
+  margin-bottom: 15px;
+}
+
+.CR-section-description {
+  text-align: center;
+  color: #666;
+  max-width: 700px;
+  margin: 0 auto 40px;
+  font-size: 1.1rem;
+}
+
+/* Value Cards */
+.CR-value-card {
+  text-align: center;
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border: none;
+}
+
+.CR-value-icon {
+  font-size: 32px;
+  color: #1890ff;
+  margin-bottom: 20px;
+}
+
+.CR-value-title {
+  color: #444;
+  margin-bottom: 15px;
+}
+
+/* Benefits Section */
+.CR-benefits-row {
+  margin-top: 30px;
+}
+
+.CR-benefit-card {
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border: none;
+  transition: transform 0.3s;
+}
+
+.CR-benefit-card:hover {
+  transform: translateY(-5px);
+}
+
+.CR-benefit-icon-container {
+  font-size: 28px;
+  color: #1890ff;
+  margin-bottom: 15px;
+}
+
+.CR-benefit-title {
+  color: #444;
+  margin-bottom: 10px;
+}
+
+.CR-benefit-description {
+  color: #666;
+}
+
+/* Job Openings */
+.CR-job-card {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08);
+  border: none;
+}
+
+.CR-job-header {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+.CR-job-meta {
+  margin-top: 10px;
+}
+
+.CR-job-meta .CR-ant-tag {
+  margin-right: 8px;
+  margin-bottom: 8px;
+}
+
+.CR-job-description {
+  color: #444;
+  margin-bottom: 20px;
+}
+
+.CR-job-skills {
+  margin-bottom: 20px;
+}
+
+.CR-job-skills .CR-ant-tag {
+  margin-bottom: 8px;
+}
+
+.CR-job-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.CR-apply-button {
+  font-weight: 500;
+}
+
+/* Culture Section */
+.CR-culture-section {
+  background: #f9f9f9;
+  padding: 60px 40px;
+  border-radius: 8px;
+}
+
+.CR-culture-content {
+  max-width: 500px;
+}
+
+.CR-culture-button {
+  margin-top: 20px;
+}
+
+.CR-culture-image {
+  background: #e6f7ff;
+  height: 100%;
+  min-height: 300px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CR-image-placeholder {
+  text-align: center;
+}
+
+.CR-placeholder-icon {
+  font-size: 48px;
+  color: #1890ff;
+  margin-bottom: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .CR-career-hero {
+    padding: 60px 20px;
+  }
+  
+  .CR-hero-title {
+    font-size: 1.8rem !important;
+  }
+  
+  .CR-job-footer {
+    flex-direction: column;
+    gap: 15px;
+    align-items: flex-start;
+  }
+  
+  .CR-culture-section {
+    padding: 40px 20px;
+  }
+  
+  .CR-culture-content {
+    margin-bottom: 30px;
+  }
+}

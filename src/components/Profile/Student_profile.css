@@ -1,0 +1,339 @@
+:root {
+  --primary-gradient: linear-gradient(to bottom right, #14b8a6, #0891b2, #1d4ed8);
+  --primary-dark: #1d4ed8;
+  --primary-mid: #0891b2;
+  --primary-light: #14b8a6;
+  --text-light: #f8fafc;
+  --text-dark: #1e293b;
+  --border-color: #e2e8f0;
+  --card-bg: #ffffff;
+  --section-bg: #f8fafc;
+}
+
+.SP-profile-container {
+  max-width: 1200px;
+  margin: 70px auto;
+  padding: 20px;
+}
+
+.SP-profile-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  /* padding-bottom: 20px; */
+  border-bottom: 1px solid var(--border-color);
+  /* new */
+  margin-bottom: 20px;
+  color: white;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1a365d 0%, #1890ff 100%);
+  border-radius: 8px;
+}
+
+.SP-profile-header h1 {
+  /* font-size: 2rem;
+  color: var(--primary-dark); */
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.SP-profile-actions {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 20px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  border: none;
+}
+
+.SP-edit-btn, .SP-save-btn {
+  background: var(--primary-gradient);
+  color: white!important;
+}
+
+.SP-edit-btn:hover, .SP-save-btn:hover {
+  background: linear-gradient(to bottom right, #1d4ed8, #0891b2, #14b8a6);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.2);
+}
+
+.SP-cancel-btn {
+  background: white;
+  border: 1px solid var(--border-color);
+  color: var(--text-dark);
+}
+
+.SP-cancel-btn:hover {
+  background: #f8fafc;
+}
+
+.SP-add-btn {
+  background: var(--primary-light);
+  color: white;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+}
+
+.SP-add-btn:hover {
+  background: var(--primary-mid);
+}
+
+.SP-remove-btn {
+  background: #fef2f2;
+  color: #ef4444;
+  padding: 8px 15px;
+  font-size: 0.9rem;
+  border: 1px solid #fee2e2;
+}
+
+.SP-remove-btn:hover {
+  background: #fee2e2;
+}
+
+.SP-profile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.SP-profile-section {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 25px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.SP-profile-section h2 {
+  font-size: 1.4rem;
+  color: var(--text-blue);
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  border-bottom: 1px solid var(--border-color);
+}
+
+.SP-section-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.SP-form-group {
+  margin-bottom: 15px;
+}
+
+.SP-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--text-dark);
+  font-size: 0.9rem;
+}
+
+.SP-form-group input, 
+.SP-form-group textarea, 
+.SP-form-group select {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+  font-size: 0.95rem;
+}
+
+.SP-form-group textarea {
+  min-height: 80px;
+  resize: vertical;
+}
+
+.SP-form-group.SP-full-width {
+  grid-column: 1 / -1;
+}
+
+.SP-form-group p {
+  margin: 0;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.SP-skills-edit {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.SP-skills-input {
+  display: flex;
+  gap: 10px;
+}
+
+.SP-skills-input input {
+  flex: 1;
+  padding: 10px 12px;
+  border: 1px solid var(--border-color);
+  border-radius: 6px;
+}
+
+.SP-skills-input button {
+  padding: 10px 15px;
+  background: var(--primary-light);
+  color: white;
+}
+
+.SP-skills-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.SP-skill-tag {
+  background: var(--section-bg);
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.SP-skill-tag button {
+  background: none;
+  border: none;
+  color: #64748b;
+  padding: 0;
+  font-size: 1rem;
+}
+
+.SP-education-item,
+.SP-experience-item,
+.SP-project-item {
+  padding: 20px;
+  margin-bottom: 20px;
+  background: var(--section-bg);
+  border-radius: 8px;
+}
+
+.SP-education-item h3,
+.SP-experience-item h3,
+.SP-project-item h3 {
+  margin-bottom: 5px;
+  color: var(--text-blue);
+}
+
+.SP-description {
+  margin-top: 10px;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+.SP-technologies {
+  margin-top: 5px;
+  font-size: 0.9rem;
+}
+
+a {
+  color: var(--primary-mid);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+  .SP-profile-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .SP-form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.SP-resume-upload {
+  margin: 20px 0;
+  padding: 15px;
+  border: 1px dashed #ccc;
+}
+
+.SP-resume-preview {
+  margin: 20px 0;
+}
+
+.SP-resume-section {
+  margin-bottom: 30px;
+}
+
+.SP-resume-content {
+  margin-top: 15px;
+}
+
+.SP-resume-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #f8f9fa;
+  border: 1px solid #e9ecef;
+  border-radius: 4px;
+  max-width: 400px;
+}
+
+.SP-resume-box p {
+  margin: 0;
+}
+
+.SP-view-btn {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 5px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.SP-view-btn:hover {
+  background-color: #0069d9;
+}
+
+.SP-selected-file {
+  margin-top: 10px;
+  font-size: 0.9em;
+  color: #28a745;
+}
+
+.gender-icon {
+  margin-right: 8px;
+  font-size: 16px;
+  vertical-align: middle;
+  
+  &.male { color:black; }
+  &.female { color: black; }
+  &.other { color: black; }
+  &.neutral { color: black; }
+  &.default { color: black; }
+}
+
+.SP-gender-label {
+  vertical-align: middle;
+}
+
+.SP-form-group select {
+  padding: 8px;
+  width: 100%;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+}

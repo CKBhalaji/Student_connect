@@ -1,0 +1,276 @@
+.RSI-interview-scheduler-container {
+  padding: 24px;
+  /* background-color: #f5f5f5; */
+  min-height: 100vh;
+  max-width: 1200px;
+  margin: 70px auto;
+  /* padding: 20px; */
+}
+
+.RSI-scheduler-header {
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 24px; */
+  text-align: center;
+  margin-bottom: 24px;
+  color: white;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1a365d 0%, #1890ff 100%);
+  border-radius: 8px;
+}
+
+.RSI-header-left {
+  /* display: flex; */
+  align-items: center;
+  gap: 16px;
+}
+
+.RSI-header-left h1 {
+  /* margin: 0;
+  font-size: 24px;
+  font-weight: 600;
+  color: #1a1a1a; */
+  /* text-align: center; */
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.RSI-back-button {
+  display: flex;
+  /* align-items: center; */
+  /* margin-bottom: 0px; */
+}
+
+.RSI-scheduler-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.RSI-interviews-card,
+.RSI-candidates-card {
+  /* background-color: white!important; */
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+.RSI-candidates-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.RSI-search-input {
+  width: 300px;
+}
+
+.RSI-loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  gap: 16px;
+}
+
+/* Form Styles */
+.RSI-form-row {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.RSI-form-col {
+  flex: 1;
+}
+
+.RSI-form-col-2 {
+  flex: 2;
+}
+
+.RSI-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .RSI-scheduler-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .RSI-form-row {
+    flex-direction: column;
+    gap: 0;
+  }
+  
+  .RSI-search-input {
+    width: 100%;
+  }
+  
+  .RSI-candidates-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+  }
+}
+
+.RSI-interview-scheduler-container .ant-card .ant-card-head {
+  color: var(--text-dark)!important;
+}
+
+
+/* Table Styling */
+.RSI-interviews-card .ant-table,
+.RSI-candidates-card .ant-table {
+  background-color: var(--table-bg) !important;
+  color: var(--table-text) !important;
+}
+
+.RSI-interviews-card .ant-table-thead > tr > th,
+.RSI-candidates-card .ant-table-thead > tr > th {
+  background-color: var(--table-bg) !important;
+  color: var(--table-text) !important;
+  border-bottom: 1px solid var(--table-border) !important;
+}
+
+.RSI-interviews-card .ant-table-tbody > tr > td,
+.RSI-candidates-card .ant-table-tbody > tr > td {
+  background-color: var(--table-bg) !important;
+  color: var(--table-text) !important;
+  border-bottom: 1px solid var(--table-border) !important;
+}
+
+.RSI-interviews-card .ant-table-tbody > tr:hover > td,
+.RSI-candidates-card .ant-table-tbody > tr:hover > td {
+  background-color: var(--table-hover) !important;
+}
+
+/* Input Styling */
+/* .RSI-search-input .ant-input,
+.RSI-interviews-card .ant-input,
+.RSI-candidates-card .ant-input,
+.RSI-interviews-card .ant-select-selector,
+.RSI-candidates-card .ant-select-selector,
+.RSI-interviews-card .ant-picker,
+.RSI-candidates-card .ant-picker {
+  background-color: white !important;
+  color: black !important;
+  border-color: #d9d9d9 !important;
+} */
+
+.RSI-candidates-card .ant-input,
+/* .RSI-candidates-card .ant-select-selector, */
+.RSI-candidates-card .ant-picker {
+  background-color: white !important;
+  color: black !important;
+  border-color: #d9d9d9 !important;
+}
+
+/* Update placeholder text color */
+.RSI-search-input .ant-input::placeholder,
+.RSI-interviews-card .ant-input::placeholder,
+.RSI-candidates-card .ant-input::placeholder {
+  color: #666 !important;
+}
+
+/* Pagination Styling */
+.RSI-interviews-card .ant-pagination-item a,
+.RSI-candidates-card .ant-pagination-item a {
+  color: var(--table-text) !important;
+}
+
+.RSI-interviews-card .ant-pagination-item-active,
+.RSI-candidates-card .ant-pagination-item-active {
+  background-color: var(--table-hover) !important;
+  border-color: var(--table-border) !important;
+}
+
+/* Cards Styling */
+/* .RSI-interviews-card,
+.RSI-candidates-card {
+  background-color: var(--card-bg) !important;
+  border-color: var(--border-color) !important;
+} */
+
+/* .RSI-interviews-card .ant-card-head,
+.RSI-candidates-card .ant-card-head {
+  border-color: var(--border-color) !important;
+  color: var(--text-dark) !important;
+} */
+
+/* Buttons Styling */
+.RSI-scheduler-header button {
+  background: var(--primary-gradient);
+  color: var(--text-light) !important;
+  border: none;
+}
+
+.RSI-scheduler-header button:hover {
+  background: var(--primary-gradient-hover) !important;
+}
+
+/* Status Tags Styling */
+.RSI-interview-scheduler-container .ant-tag {
+  background-color: var(--section-bg) !important;
+  color: var(--text-dark) !important;
+  border-color: var(--border-color) !important;
+}
+
+/* Modal Styling */
+.RSI-interview-scheduler-container .ant-modal-content {
+  background-color: var(--card-bg) !important;
+  color: var(--text-dark) !important;
+}
+
+.RSI-interview-scheduler-container .ant-modal-header {
+  background-color: var(--section-bg) !important;
+  border-color: var(--border-color) !important;
+}
+
+.RSI-interview-scheduler-container .ant-modal-title {
+  color: var(--text-dark) !important;
+}
+
+.RSI-interview-scheduler-container .ant-model-input > input{
+  background-color: white!important;
+  color: var(--text-dark)!important;
+}
+
+/* Form Elements in Modal */
+.RSI-interview-scheduler-container .ant-form-item-label > label {
+  color: var(--text-dark) !important;
+}
+
+.RSI-interview-scheduler-container .ant-picker-input > input,
+.RSI-interview-scheduler-container .ant-select-selection-item {
+  background-color: var(--input-bg)!important;
+  color: var(--text-dark) !important;
+}
+
+.RSI-interview-scheduler-container .ant-button-primary {
+  background: var(--primary-gradient)!important;
+  border-color: var(--border-color)!important;
+}
+
+.RSI-interview-scheduler-container .ant-btn-variant-solid {
+  background: var(--primary-gradient)!important;
+  border-color: var(--border-color)!important;
+}
+
+.RSI-interview-scheduler-container .ant-input, .ant-select-selector {
+  background-color: white!important;
+  color: black!important;
+  border-color: #d9d9d9!important;
+}
+
+.RSI-interview-scheduler-container .ant-btn-color-default {
+  color: var(--text-dark)!important;
+}

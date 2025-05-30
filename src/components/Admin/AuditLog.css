@@ -1,0 +1,111 @@
+.AL-audit-log {
+  max-width: 1200px;
+  margin: 70px auto;
+  padding: 20px;
+}
+
+.AL-audit-log .ant-input {
+  background-color: white !important;
+  color: black !important;
+}
+
+.AL-audit-header {
+  margin-bottom: 24px;
+  text-align: center;
+  color: white;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1a365d 0%, #1890ff 100%);
+  border-radius: 8px;
+}
+
+.AL-audit-header .AL-page-title {
+  margin-bottom: 8px;
+}
+
+.AL-audit-filters {
+  margin-bottom: 24px;
+}
+
+.AL-audit-actions {
+  margin-bottom: 16px;
+}
+
+.AL-action-cell {
+  display: flex;
+  align-items: center;
+}
+
+.AL-action-icon {
+  font-size: 18px;
+  margin-right: 12px;
+  color: #1890ff;
+}
+
+.AL-action-type {
+  font-weight: 500;
+}
+
+.AL-action-description {
+  color: var(--text-light);
+  font-size: 13px;
+}
+
+.AL-user-cell {
+  display: flex;
+  flex-direction: column;
+}
+
+.AL-user-name {
+  font-weight: 500;
+}
+
+.AL-user-email {
+  color: var(--text-light);
+  font-size: 13px;
+}
+
+.AL-timestamp-cell {
+  display: flex;
+  align-items: center;
+}
+
+.AL-audit-table {
+  margin-top: 16px;
+}
+
+.AL-audit-table .AL-ant-table-thead > tr > th {
+  font-weight: 600;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .AL-audit-log {
+    padding: 10px;
+  }
+
+  .AL-action-cell {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .AL-action-icon {
+    margin-right: 0;
+    margin-bottom: 8px;
+  }
+}
+
+.AL-audit-log .ant-tabs .ant-tabs-tab {
+  color: var(--text-dark)!important;
+}
+
+.AL-audit-log .ant-badge.ant-badge-status .ant-badge-status-text {
+  color: var(--text-dark)!important;
+}
+
+.AL-audit-log .ant-typography {
+  color: var(--text-dark)!important;
+}
+
+.AL-audit-log .ant-btn-color-default {
+  color: var(--text-dark)!important;
+}

@@ -1,0 +1,191 @@
+.RA-recruiter-analytics {
+  max-width: 1200px;
+  margin: 70px auto;
+  padding: 20px;
+}
+
+
+.RA-analytics-header {
+  /* margin-bottom: 30px; */
+  /* text-align: center; */
+  margin-bottom: 30px;
+  color: white;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1a365d 0%, #1890ff 100%);
+  border-radius: 8px;
+}
+
+.RA-analytics-header h1 {
+  /* font-size: 2rem;
+  color: #1a365d;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px; */
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.RA-analytics-header p {
+  /* color: #666; */
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+.RA-analytics-filters {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.RA-date-range-picker {
+  width: 280px;
+}
+
+.RA-department-filter {
+  width: 200px;
+}
+
+.RA-metrics-row {
+  margin-bottom: 20px;
+}
+
+.RA-metric-card {
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.RA-metric-content {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+
+.RA-metric-icon {
+  font-size: 24px;
+  color: #1890ff;
+  padding: 10px;
+  background: #e6f7ff;
+  border-radius: 50%;
+}
+
+.RA-metric-value {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 5px 0 0;
+  color: var(--text-blue);
+}
+
+.RA-chart-card {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 100%;
+}
+
+.RA-chart-card .RA-ant-card-head {
+  border-bottom: none;
+}
+
+.RA-chart-card .RA-ant-card-head-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.RA-insights-card {
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.RA-insights-content {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 20px;
+}
+
+.RA-insight-item {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+.RA-insight-item h3 {
+  color: #444;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.RA-insight-item p {
+  color: #666;
+  margin: 0;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .RA-analytics-filters {
+    flex-direction: column;
+  }
+
+  .RA-date-range-picker,
+  .RA-department-filter {
+    width: 100%;
+  }
+
+  .RA-insights-content {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Date picker and select inputs in header */
+.RA-analytics-header .ant-picker {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.RA-analytics-header .ant-picker-input input {
+  /* color: white !important; */
+  background-color: white!important;
+}
+
+.RA-analytics-header .ant-picker-input input::placeholder {
+  color: black !important;
+  /* background-color: var(--section-bg)!important; */
+}
+
+.RA-analytics-header .ant-select-selector {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border-color: rgba(255, 255, 255, 0.5) !important;
+}
+
+.RA-analytics-header .ant-select-selection-item,
+.RA-analytics-header .ant-select-selection-placeholder {
+  color: black !important;
+}
+
+/* Dropdown arrows and calendar icon */
+.RA-analytics-header .ant-picker-suffix,
+.RA-analytics-header .ant-select-arrow {
+  color: rgba(0, 0, 0, 0.7) !important;
+}
+
+/* Hover states */
+.RA-analytics-header .ant-picker:hover,
+.RA-analytics-header .ant-select-selector:hover {
+  border-color: white !important;
+}
+
+/* Focus states */
+.RA-analytics-header .ant-picker-focused,
+.RA-analytics-header .ant-select-focused .ant-select-selector {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2) !important;
+  color: white!important;
+}
+
+.RA-recruiter-analytics .ant-card .ant-card-head {
+  color: var(--text-dark);
+}

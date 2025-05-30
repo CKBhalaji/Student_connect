@@ -1,0 +1,527 @@
+.RSA-recruiter-student-applications {
+  max-width: 1200px;
+  margin: 70px auto;
+  padding: 20px;
+}
+
+.RSA-applications-header {
+  /* display: flex; */
+  /* margin-bottom: 30px; */
+  /* text-align: center; */
+  margin-bottom: 30px;
+  color: white;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1a365d 0%, #1890ff 100%);
+  border-radius: 8px;
+}
+
+.RSA-applications-header h1 {
+  /* font-size: 2rem;
+  color: #1a365d;
+  margin-bottom: 8px; */
+  text-align: center;
+  font-size: 2.5rem;
+  /* margin-bottom: 10px; */
+  font-weight: 700;
+}
+
+.RSA-applications-header p {
+  /* /* color: #666; */
+  /* margin-bottom: 50px;  */
+  text-align: center;
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.RSA-back-button {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.RSA-applications-filters {
+  display: flex;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.RSA-search-input {
+  flex: 1;
+  min-width: 250px;
+}
+
+.RSA-status-filter {
+  width: 200px;
+}
+
+.RSA-date-range-picker {
+  width: 280px;
+}
+
+.RSA-applications-table-card {
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.RSA-applicant-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.RSA-applicant-avatar {
+  background-color: #1890ff;
+  color: white;
+  font-weight: bold;
+}
+
+.RSA-applicant-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.RSA-applicant-info span {
+  color: #666;
+  font-size: 0.9rem;
+}
+
+.RSA-match-score {
+  font-weight: bold;
+  padding: 4px 8px;
+  border-radius: 4px;
+  display: inline-block;
+}
+
+.RSA-match-score.RSA-excellent {
+  background-color: #e6f7ff;
+  color: #1890ff;
+}
+
+.RSA-match-score.RSA-good {
+  background-color: #f6ffed;
+  color: #52c41a;
+}
+
+.RSA-match-score.RSA-fair {
+  background-color: #fffbe6;
+  color: #faad14;
+}
+
+.RSA-action-buttons {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.RSA-view-btn,
+.RSA-email-btn {
+  border: none;
+  box-shadow: none;
+}
+
+.RSA-status-select {
+  min-width: 120px;
+}
+
+/* Application Details Modal */
+.RSA-application-details {
+  padding: 10px;
+}
+
+.RSA-applicant-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.RSA-applicant-title h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.RSA-applicant-title p {
+  margin: 5px 0;
+  color: #666;
+}
+
+.RSA-applicant-status {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.RSA-detail-section {
+  margin-bottom: 20px;
+}
+
+.RSA-detail-section h3 {
+  margin-bottom: 12px;
+  color: #444;
+}
+
+.RSA-detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.RSA-detail-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.RSA-detail-label {
+  font-weight: 500;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.RSA-detail-value {
+  color: #333;
+}
+
+.RSA-skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.RSA-skill-tag {
+  padding: 4px 12px;
+  border-radius: 4px;
+  background: #f5f5f5;
+}
+
+.RSA-documents-container {
+  display: flex;
+  gap: 10px;
+}
+
+.RSA-notes-content {
+  padding: 12px;
+  background: #f9f9f9;
+  border-radius: 4px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .RSA-applications-filters {
+    flex-direction: column;
+  }
+
+  .RSA-search-input,
+  .RSA-status-filter,
+  .RSA-date-range-picker {
+    width: 100%;
+  }
+
+  .RSA-action-buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .RSA-status-select {
+    width: 100%;
+  }
+
+  .RSA-applicant-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .RSA-applicant-status {
+    justify-content: center;
+  }
+}
+
+/* Student Profile Modal Styles */
+.RSA-student-profile-modal .RSA-ant-modal-body {
+  padding: 24px;
+  max-height: 70vh;
+  overflow-y: auto;
+}
+
+.RSA-student-profile-view {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.RSA-profile-section {
+  padding: 16px;
+  background: #f9f9f9;
+  border-radius: 8px;
+}
+
+.RSA-profile-header {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  margin-bottom: 16px;
+}
+
+.RSA-profile-avatar {
+  background-color: #1890ff;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.RSA-profile-title h2 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+.RSA-profile-title p {
+  margin: 4px 0;
+  color: #666;
+}
+
+.RSA-profile-status {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  margin-top: 8px;
+}
+
+.RSA-match-score {
+  font-size: 0.9rem;
+}
+
+.RSA-personal-info-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  gap: 12px;
+}
+
+.RSA-info-item {
+  display: flex;
+  gap: 8px;
+}
+
+.RSA-info-label {
+  font-weight: 500;
+  color: #666;
+}
+
+.RSA-info-value {
+  color: #333;
+}
+
+.RSA-bio-content {
+  line-height: 1.6;
+  color: #444;
+}
+
+.RSA-skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.RSA-skill-tag {
+  background: #e6f7ff;
+  color: #1890ff;
+  padding: 4px 12px;
+  border-radius: 4px;
+}
+
+.RSA-education-item,
+.RSA-experience-item,
+.RSA-project-item {
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #eee;
+}
+
+.RSA-education-item:last-child,
+.RSA-experience-item:last-child,
+.RSA-project-item:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.RSA-education-item h4,
+.RSA-experience-item h4,
+.RSA-project-item h4 {
+  margin: 0 0 4px 0;
+}
+
+.RSA-location,
+.RSA-date-range {
+  /* color: #666; */
+  font-size: 0.9rem;
+  margin: 4px 0;
+}
+
+.RSA-description {
+  margin-top: 8px;
+  line-height: 1.5;
+  /* color: #444; */
+}
+
+.RSA-technologies {
+  margin-top: 8px;
+  font-size: 0.9rem;
+}
+
+.RSA-documents-container {
+  display: flex;
+  gap: 12px;
+}
+
+.RSA-document-btn {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.RSA-links-container {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.RSA-profile-link {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: #1890ff;
+  text-decoration: none;
+}
+
+.RSA-profile-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .RSA-profile-header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .RSA-profile-status {
+    justify-content: center;
+  }
+
+  .RSA-personal-info-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .RSA-documents-container {
+    flex-direction: column;
+  }
+}
+
+.RSA-status-dropdown-menu {
+  position: absolute;
+  top: -120px;
+  right: 0;
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  z-index: 1000;
+}
+
+.RSA-status-dropdown-menu .RSA-ant-select-focused .RSA-ant-select-selector {
+  border-color: #40a9ff;
+  box-shadow: 0 0 0 2px rgba(24, 144, 255, 0.2);
+}
+
+/* Input elements styling */
+.RSA-applications-filters .ant-input,
+.RSA-applications-filters .ant-select-selector,
+.RSA-applications-filters .ant-picker {
+  background-color: var(--search-bg) !important;
+  color: var(--search-text) !important;
+  border-color: black !important;
+}
+
+.RSA-applications-filters .ant-input::placeholder {
+  color: black !important;
+}
+
+/* Table styling */
+/* .RSA-applications-table-card .ant-table {
+  background-color: var(--table-bg) !important;
+  color: var(--table-text) !important;
+}
+
+.RSA-applications-table-card .ant-table-thead > tr > th {
+  background-color: var(--table-bg) !important;
+  color: var(--table-text) !important;
+  border-bottom: 1px solid var(--table-border) !important;
+}
+
+.RSA-applications-table-card .ant-table-tbody > tr > td {
+  background-color: var(--table-bg) !important;
+  color: var(--table-text) !important;
+  border-bottom: 1px solid var(--table-border) !important;
+}
+
+.RSA-applications-table-card .ant-table-tbody > tr:hover > td {
+  background-color: var(--table-hover) !important;
+}
+
+.RSA-applications-table-card .ant-pagination-item a {
+  color: var(--table-text) !important;
+}
+
+.RSA-applications-table-card .ant-pagination-item-active {
+  background-color: var(--table-hover) !important;
+  border-color: var(--table-border) !important;
+}
+
+.RSA-applications-table-card .ant-pagination-item-link-icon {
+  color: var(--table-text) !important;
+}
+
+.RSA-applications-table-card .ant-tag {
+  background-color: var(--table-hover) !important;
+  border-color: var(--table-border) !important;
+  color: var(--table-text) !important;
+} */
+
+/* Mobile view adjustments */
+@media (max-width: 768px) {
+  .RSA-applications-table-card .ant-table-tbody > tr > td::before {
+    color: var(--table-text) !important;
+  }
+  
+  .RSA-applications-table-card .ant-table-row {
+    background-color: var(--table-bg) !important;
+    border: 1px solid var(--table-border) !important;
+  }
+}
+
+/* Update date picker background color with more specificity */
+.RSA-applications-filters .ant-picker,
+.RSA-applications-filters .ant-picker-input,
+.RSA-applications-filters .ant-picker-input > input {
+  background-color: white !important;
+  color: black !important;
+}
+
+/* Update the calendar dropdown background */
+.RSA-applications-filters .ant-picker-panel,
+.RSA-applications-filters .ant-picker-panel-container {
+  background-color: white !important;
+}
+
+/* Update the calendar dropdown text color */
+.RSA-applications-filters .ant-picker-panel * {
+  color: black !important;
+}
+
+/* Ensure hover and focus states maintain white background */
+.RSA-applications-filters .ant-picker:hover,
+.RSA-applications-filters .ant-picker-focused {
+  background-color: white !important;
+}

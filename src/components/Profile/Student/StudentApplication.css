@@ -1,0 +1,289 @@
+.SA-studentap-hero {
+  /* background: linear-gradient(to right, rgba(20, 184, 166, 0.9), rgba(8, 145, 178, 0.9));
+  color: white;
+  padding: 30px 20px;
+  border-radius: 0 8px 20px 20px;
+  margin-bottom: 40px;
+  text-align: center; */
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1a365d 0%, #1890ff 100%);
+  border-radius: 8px;
+}
+
+.SA-studentap-hero h1 {
+  /* font-size: 2.5rem;
+  margin-bottom: 15px; */
+  font-size: 2.5rem;
+  /* margin-bottom: 10px; */
+  font-weight: 700;
+}
+
+.SA-studentap-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.SA-student-hero button {
+  background: linear-gradient(to bottom right, #1d4ed8, #0891b2, #14b8a6);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1rem;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  margin-top: 50px;
+}
+
+/* .SA-student-hero button :hover {
+  background: linear-gradient(to bottom right, #1d4ed8, #0891b2, #14b8a6);
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.2);
+} */
+
+.SA-student-applications-container {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 70px auto;
+}
+
+/* .SA-page-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 80px;
+} */
+
+/* .SA-header-left h1 {
+  margin-bottom: 4px;
+  font-size: 28px;
+} */
+
+.SA-header-left p {
+  color: #666;
+  margin: 20px;
+}
+
+.SA-filter-card {
+  margin-bottom: 24px;
+}
+
+.SA-filters-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+/* Add these styles to your StudentApplication.css */
+
+/* Search input */
+.SA-search-input .ant-input {
+  background-color: white !important;
+  color: black !important;
+}
+
+/* Date picker */
+.SA-date-picker .ant-picker-input input {
+  background-color: white !important;
+  color: black !important;
+}
+
+/* Placeholder text */
+.SA-search-input .ant-input::placeholder,
+.SA-date-picker .ant-picker-input input::placeholder {
+  color: #666 !important;
+}
+
+/* Date picker dropdown */
+.SA-date-picker .ant-picker-panel {
+  background-color: white;
+}
+
+/* If you want the entire date picker component to have white background */
+.SA-date-picker .ant-picker {
+  background-color: white;
+}
+
+
+.SA-search-input {
+  width: 100%;
+  height: 40px;
+  background-color: var(text-dark);
+}
+
+.SA-filter-label {
+  font-weight: 500;
+  margin-right: 12px;
+  display: inline-block;
+  min-width: 100px;
+}
+
+.SA-status-filter, .SA-date-filter {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.SA-status-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.SA-status-button {
+  margin-right: 8px;
+}
+
+.SA-date-picker {
+  width: 300px;
+}
+
+.SA-applications-stats {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 16px;
+  margin-bottom: 24px;
+}
+
+.SA-stat-card {
+  text-align: center;
+  padding: 16px;
+}
+
+.SA-stat-value {
+  font-size: 32px;
+  font-weight: 600;
+  color:var(--text-blue);
+}
+
+.SA-stat-label {
+  color: var(--text-blue);
+  margin-top: 4px;
+}
+
+.SA-applications-table-card {
+  margin-bottom: 24px;
+}
+
+.SA-loading-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px;
+}
+
+.SA-position-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.SA-position-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.SA-position-title {
+  font-weight: 500;
+}
+
+.SA-company-name {
+  color: #666;
+  font-size: 12px;
+}
+
+/* Application Details Modal */
+.SA-company-header {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  margin-bottom: 16px;
+}
+
+.SA-company-info {
+  flex: 1;
+}
+
+.SA-company-info h2 {
+  margin-bottom: 4px;
+}
+
+.SA-job-meta {
+  display: flex;
+  gap: 16px;
+  color: #666;
+  flex-wrap: wrap;
+}
+
+.SA-application-status {
+  text-align: right;
+}
+
+.SA-job-details h3 {
+  margin-top: 16px;
+  margin-bottom: 8px;
+}
+
+.SA-application-dates {
+  display: flex;
+  gap: 24px;
+  margin-top: 24px;
+  padding: 16px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.SA-date-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.SA-date-label {
+  font-weight: 500;
+  color: #666;
+  font-size: 12px;
+}
+
+.SA-date-value {
+  font-weight: 500;
+}
+
+.SA-timeline-item h4 {
+  margin-bottom: 4px;
+}
+
+.SA-notes-section {
+  padding: 16px 0;
+}
+
+@media (max-width: 768px) {
+  .SA-page-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .SA-applications-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .SA-company-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .SA-application-status {
+    text-align: left;
+    margin-top: 8px;
+  }
+}
+
+.SA-company-name {
+  color: var(--text-secondary) !important;
+}

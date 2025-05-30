@@ -1,0 +1,419 @@
+.SCD-student-deadline-calendar-container {
+  padding: 24px;
+  max-width: 1200px;
+  margin: 70px auto;
+}
+
+.SCD-calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* margin-bottom: 24px; */
+  margin-bottom: 24px;
+  color: white;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1a365d 0%, #1890ff 100%);
+  border-radius: 8px;
+}
+
+.SCD-header-left h1 {
+  /* margin-bottom: 4px;
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  gap: 10px; */
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.SCD-header-left p {
+  /* color: #666;
+  margin: 0; */
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Add Event Button */
+.SCD-header-right {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+/* Form Styling */
+.SCD-ant-form-item-label > label {
+  font-weight: 500;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .SCD-ant-modal {
+    max-width: 95%;
+    margin: 0 auto;
+  }
+  
+  .SCD-ant-radio-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+.SCD-calendar-card {
+  margin-bottom: 24px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.SCD-calendar-legend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  margin-bottom: 16px;
+  padding: 8px 16px;
+  background-color: #f5f5f5;
+  border-radius: 4px;
+}
+
+.SCD-legend-item {
+  display: flex;
+  align-items: center;
+}
+
+.SCD-events-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Event click styling */
+.SCD-events-list li {
+  margin-bottom: 4px;
+  padding: 0;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.SCD-events-list li:hover {
+  opacity: 0.8;
+}
+
+.SCD-no-events-cell {
+  color: #ccc;
+  font-size: 12px;
+  text-align: center;
+  cursor: default;
+}
+
+/* Company details section */
+.SCD-company-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.SCD-company-details p {
+  margin: 0;
+}
+
+.SCD-event-title {
+  cursor: pointer;
+}
+
+/* Date Events Modal */
+.SCD-date-events-list {
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.SCD-event-card {
+  margin-bottom: 16px;
+}
+
+.SCD-event-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.SCD-event-title-section {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.SCD-event-title-section h3 {
+  margin: 0;
+}
+
+.SCD-event-company {
+  color: #666;
+}
+
+.SCD-event-details {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.SCD-detail-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+}
+
+.SCD-detail-item.SCD-description {
+  margin-top: 8px;
+}
+
+.SCD-event-actions {
+  display: flex;
+  gap: 12px;
+  margin-top: 16px;
+}
+
+.SCD-no-events {
+  text-align: center;
+  padding: 24px;
+  color: #666;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .SCD-calendar-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+  }
+  
+  .SCD-header-right {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .SCD-event-type-filter {
+    width: 100% !important;
+  }
+  
+  .SCD-event-header {
+    flex-direction: column;
+  }
+  
+  .SCD-event-actions {
+    flex-direction: column;
+  }
+  
+  .SCD-event-actions button {
+    width: 100%;
+  }
+  
+  .SCD-calendar-legend {
+    flex-direction: column;
+    gap: 8px;
+  }
+}
+
+/* Calendar cell styling */
+.SCD-deadline-calendar .SCD-ant-picker-calendar-date-content {
+  height: 80px;
+  overflow-y: auto;
+}
+
+.SCD-deadline-calendar .SCD-ant-picker-cell-selected .SCD-ant-picker-calendar-date {
+  /* background-color: #e6f7ff; */
+}
+
+/* Calendar container */
+.SCD-calendar-card {
+  background-color: var(--card-bg);
+  border: 1px solid var(--border-color);
+}
+
+/* Calendar header */
+.SCD-deadline-calendar .ant-picker-calendar-header {
+  background-color: var(--card-bg);
+  color: var(--text-dark);
+}
+
+/* Calendar body */
+.SCD-deadline-calendar .ant-picker-panel {
+  background-color: var(--section-bg);
+}
+
+/* Calendar cells */
+.SCD-deadline-calendar .ant-picker-cell {
+  background-color: var(--card-bg);
+  color: var(--text-dark);
+  border: 1px solid var(--border-color);
+}
+
+.SCD-deadline-calendar .ant-picker-cell:hover {
+  background-color: var(--hover-bg);
+}
+
+/* Selected day */
+.SCD-deadline-calendar .ant-picker-cell-selected .ant-picker-calendar-date {
+  background-color: rgba(24, 144, 255, 0.2);
+}
+
+/* Current day */
+.SCD-deadline-calendar .ant-picker-cell-today .ant-picker-calendar-date {
+  border-color: var(--accent-color);
+}
+
+/* Calendar toolbar */
+.SCD-deadline-calendar .ant-picker-calendar-year-select,
+.SCD-deadline-calendar .ant-picker-calendar-month-select {
+  color: var(--text-dark);
+}
+
+/* Weekday headers */
+.SCD-deadline-calendar .ant-picker-calendar-column-header {
+  color: var(--text-dark);
+}
+
+/* Event badges */
+.SCD-events-list .ant-badge-status-text {
+  color: var(--text-dark);
+}
+
+/* Modal styling */
+.SCD-date-events-list {
+  background-color: var(--section-bg);
+  color: var(--text-dark);
+}
+
+/* Add Event Modal Form */
+.SCD-ant-form-item-label > label {
+  color: var(--text-dark);
+}
+
+.SCD-ant-input,
+.SCD-ant-picker,
+.SCD-ant-radio-wrapper {
+  background-color: var(--card-bg);
+  color: var(--text-dark);
+  border-color: var(--border-color);
+}
+
+.SCD-ant-input::placeholder {
+  color: var(--text-dark);
+}
+
+/* Legend */
+.SCD-calendar-legend {
+  background-color: var(--section-bg);
+  border-color: var(--border-color);
+  color: var(--text-dark)!important;
+}
+
+button, .ant-btn {
+    border-color: var(--border-color);
+    background-color: var(--primary-gradient)!important;
+}
+
+/* Add these styles to your CSS file */
+
+/* Modal Container */
+.SCD-ant-modal-content {
+  background-color: var(--card-bg) !important;
+  color: var(--text-dark) !important;
+}
+
+/* Modal Header */
+.SCD-ant-modal-header {
+  background-color: var(--section-bg) !important;
+  border-bottom: 1px solid var(--border-color) !important;
+}
+
+.SCD-ant-modal-title {
+  color: var(--text-dark) !important;
+}
+
+/* Form Elements */
+.SCD-ant-form-item-label > label {
+  color: var(--text-dark) !important;
+}
+
+.SCD-ant-input,
+.SCD-ant-input-textarea,
+.SCD-ant-picker,
+.SCD-ant-picker-input > input {
+  background-color: var(--card-bg) !important;
+  color: var(--text-dark) !important;
+  border-color: var(--border-color) !important;
+}
+
+.SCD-ant-input::placeholder,
+.SCD-ant-picker-input > input::placeholder {
+  color: var(--text-dark) !important;
+}
+
+/* Radio Buttons */
+.SCD-ant-radio-wrapper {
+  color: var(--text-dark) !important;
+}
+
+.SCD-ant-radio-inner {
+  background-color: var(--card-bg) !important;
+  border-color: var(--border-color) !important;
+}
+
+.SCD-ant-radio-checked .SCD-ant-radio-inner {
+  border-color: var(--accent-color) !important;
+}
+
+.SCD-ant-radio-inner::after {
+  background-color: var(--accent-color) !important;
+}
+
+/* Buttons */
+.SCD-ant-btn-primary {
+  background-color: var(--accent-color) !important;
+  border-color: var(--accent-color) !important;
+}
+
+.SCD-ant-btn-default {
+  background-color: var(--card-bg) !important;
+  border-color: var(--border-color) !important;
+  color: var(--text-dark) !important;
+}
+
+/* Date/Time Picker Dropdown */
+.SCD-ant-picker-panel {
+  background-color: var(--card-bg) !important;
+  border-color: var(--border-color) !important;
+}
+
+.SCD-ant-picker-cell {
+  color: var(--text-dark) !important;
+}
+
+.SCD-ant-picker-cell-in-view {
+  color: var(--text-dark) !important;
+}
+
+.SCD-ant-picker-header-view button {
+  color: var(--text-dark) !important;
+}
+
+/* Hover States */
+.SCD-ant-input:hover,
+.SCD-ant-picker:hover {
+  border-color: var(--accent-color) !important;
+}
+
+.SCD-ant-btn-default:hover {
+  border-color: var(--accent-color) !important;
+  color: var(--accent-color) !important;
+}

@@ -1,0 +1,210 @@
+/* JobCard.JC-css */
+.JC-job-card {
+  background: var(--card-bg);
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.JC-job-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+/* Job Header */
+.JC-job-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 10px;
+}
+
+.JC-job-header h3 {
+  margin: 0;
+  font-size: 1.25rem;
+  color:var(--text-dark);
+  flex: 1;
+}
+
+.JC-job-type {
+  padding: 4px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-left: 15px;
+}
+
+.JC-job-type.JC-internship {
+  background-color: rgba(14, 165, 233, 0.1);
+  color: #0ea5e9;
+}
+
+.JC-job-type.JC-full-time {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+.JC-job-type.JC-part-time {
+  background-color: rgba(245, 158, 11, 0.1);
+  color: #f59e0b;
+}
+
+.JC-job-type.JC-contract {
+  background-color: rgba(139, 92, 246, 0.1);
+  color: #8b5cf6;
+}
+
+/* Job Company */
+.JC-job-company {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  color: #64748b;
+  font-size: 0.9rem;
+}
+
+.JC-company-name {
+  font-weight: 500;
+  color:var(--text-dark);
+}
+
+.JC-job-location {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Job Salary */
+.JC-job-salary {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: var(--text-blue);
+  font-size: 0.9rem;
+}
+
+.JC-posted-date {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Job Skills */
+.JC-job-skills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 10px 0;
+}
+
+.JC-skill-tag {
+  background: #f1f5f9;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  color: #475569;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+/* Job Actions */
+.JC-job-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  padding-top: 15px;
+}
+
+.JC-view-details {
+  color: #3b82f6;
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s;
+}
+
+.JC-view-details:hover {
+  color: #2563eb;
+}
+
+.JC-apply-btn {
+  background: var(--primary-gradient);
+  color: white;
+  padding: 8px 20px;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+}
+
+.JC-apply-btn:hover {
+  color: white;
+  background: var(--primary-gradient-hover);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .JC-job-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .JC-job-type {
+    align-self: flex-start;
+    margin-left: 0;
+  }
+
+  .JC-job-company {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .JC-job-salary {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .JC-job-actions {
+    flex-direction: column;
+    gap: 10px;
+    align-items: stretch;
+  }
+
+  .JC-apply-btn {
+    text-align: center;
+  }
+}
+
+/* Add to JobCard.JC-css */
+.JC-icon {
+  margin-right: 8px;
+  color: #64748b;
+  font-size: 0.9em;
+}
+
+.JC-job-type .JC-icon {
+  margin-right: 6px;
+  font-size: 0.8em;
+}
+
+/* Adjust existing styles to accommodate icons */
+.JC-job-location,
+.JC-job-salary,
+.JC-posted-date {
+  display: flex;
+  align-items: center;
+}
+
+.JC-skill-tag {
+  display: inline-flex;
+  align-items: center;
+}

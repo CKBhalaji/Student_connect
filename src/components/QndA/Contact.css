@@ -1,0 +1,197 @@
+.CON-contact-container {
+  max-width: 1200px;
+  margin: 70px auto;
+  padding: 20px;
+  padding-bottom: 40px;
+}
+
+/* Hero Section */
+.CON-contact-hero {
+  text-align: center;
+  margin-bottom: 50px;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1a365d 0%, #1890ff 100%);
+  color: white;
+  border-radius: 8px;
+}
+
+.CON-hero-title {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.CON-contact-hero p {
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* Contact Methods */
+.CON-contact-methods {
+  margin-bottom: 30px;
+}
+
+.CON-method-card {
+  text-align: center;
+  height: 100%;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.CON-method-card:hover {
+  transform: translateY(-5px);
+}
+
+.CON-method-icon {
+  font-size: 32px;
+  color: #1890ff;
+  margin-bottom: 15px;
+}
+
+.CON-method-title {
+  color: #444;
+  margin-bottom: 8px;
+}
+
+.CON-method-details {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 1.1rem;
+}
+
+.CON-method-description {
+  color: #666;
+}
+
+/* Form Card */
+.CON-form-card, .CON-info-card, .CON-faq-preview, .CON-map-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  height: 52%;
+}
+
+.CON-form-title, .CON-info-title, .CON-map-title {
+  color: #1a365d;
+  margin-bottom: 20px;
+}
+
+.CON-submit-button {
+  width: 100%;
+  height: 40px;
+}
+
+/* Info Card */
+.CON-info-item {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 15px;
+}
+
+.CON-info-icon {
+  font-size: 20px;
+  color: #1890ff;
+}
+
+.CON-quick-links {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.CON-quick-links a {
+  color: #1890ff;
+}
+
+.CON-social-links {
+  display: flex;
+  gap: 20px;
+}
+
+.CON-social-icon {
+  font-size: 24px;
+  color: #666;
+  transition: color 0.3s;
+}
+
+.CON-social-icon:hover {
+  color: #1890ff;
+}
+
+/* FAQ Preview */
+.CON-faq-preview {
+  margin-top: 24px;
+}
+
+.CON-faq-preview-title {
+  color: #444;
+  margin-bottom: 15px;
+}
+
+.CON-faq-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.CON-faq-item {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.CON-view-all-faq {
+  padding: 0;
+  margin-top: 15px;
+}
+
+/* Map Section */
+.CON-map-card {
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.CON-map-container {
+  height: 400px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CON-map-placeholder {
+  text-align: center;
+}
+
+.CON-map-icon {
+  font-size: 48px;
+  color: #1890ff;
+  margin-bottom: 15px;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .CON-contact-hero {
+    margin-bottom: 30px;
+  }
+  
+  .CON-method-card {
+    padding: 15px;
+  }
+  
+  .CON-map-container {
+    height: 300px;
+  }
+}
+
+.CON-contact-container .ant-typography {
+  color: var(--text-dark)!important;
+}
+
+.CON-contact-container .ant-form-item:not(.ant-form-item-horizontal) .ant-form-item-label >label {
+  color: var(--text-dark)!important;
+}

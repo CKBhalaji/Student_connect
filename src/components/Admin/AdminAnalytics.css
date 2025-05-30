@@ -1,0 +1,259 @@
+.AA-admin-analytics {
+  max-width: 1200px;
+  margin: 70px auto;
+  padding: 20px;
+  /* background-color: #f5f7fa; */
+}
+
+.AA-analytics-header {
+  margin-bottom: 30px;
+  padding: 20px;
+  /* background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05); */
+  color: white;
+  padding: 20px 20px;
+  background: linear-gradient(135deg, #1a365d 0%, #1890ff 100%);
+  border-radius: 8px;
+}
+
+.AA-page-title {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 8px;
+  color: #1a365d;
+}
+
+.AA-page-title .AA-anticon {
+  font-size: 24px;
+}
+
+.AA-analytics-filters {
+  display: flex;
+  gap: 15px;
+  margin-top: 20px;
+  flex-wrap: wrap;
+}
+
+.AA-date-range-picker {
+  width: 280px;
+}
+
+.AA-department-filter {
+  width: 200px;
+}
+
+.AA-analytics-tabs .AA-ant-tabs-nav {
+  margin-bottom: 25px;
+}
+
+.AA-analytics-tabs .AA-ant-tabs-tab {
+  padding: 12px 16px;
+  font-weight: 500;
+}
+
+.AA-analytics-tabs .AA-ant-tabs-tab-active {
+  color: #1890ff;
+}
+
+.AA-analytics-tabs .AA-ant-tabs-ink-bar {
+  background: #1890ff;
+}
+
+.AA-metrics-row {
+  margin-bottom: 20px;
+}
+
+.AA-metric-card {
+  height: 100%;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  transition: all 0.3s ease;
+}
+
+.AA-metric-card:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.AA-metric-content {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.AA-metric-icon {
+  width: 48px;
+  height: 48px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+}
+
+.AA-metric-value {
+  margin: 8px 0 4px;
+  color: #1a365d;
+}
+
+.AA-metric-growth {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 12px;
+  margin-top: 4px;
+}
+
+.AA-metric-growth.AA-positive {
+  color: #52c41a;
+}
+
+.AA-metric-growth.AA-negative {
+  color: #ff4d4f;
+}
+
+.AA-charts-row {
+  margin-bottom: 20px;
+}
+
+.AA-chart-card {
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+  margin-bottom: 20px;
+}
+
+.AA-chart-card .AA-ant-card-head {
+  border-bottom: none;
+  padding: 16px 20px;
+}
+
+.AA-chart-card .AA-ant-card-head-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 0;
+}
+
+.AA-chart-card .AA-ant-card-body {
+  padding: 16px;
+}
+
+.AA-insights-card {
+  margin-top: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border: none;
+}
+
+.AA-insights-card .AA-ant-card-head {
+  border-bottom: none;
+}
+
+.AA-insights-card .AA-ant-card-body {
+  padding: 20px;
+}
+
+.AA-insight-item {
+  background: #fff;
+  padding: 16px;
+  border-radius: 8px;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.05);
+  height: 100%;
+  border-left: 4px solid #1890ff;
+}
+
+.AA-insight-item.AA-positive {
+  border-left-color: #52c41a;
+}
+
+.AA-insight-item.AA-negative {
+  border-left-color: #ff4d4f;
+}
+
+.AA-insight-item h4 {
+  margin-bottom: 8px;
+  color: #1a365d;
+}
+
+/* Custom tooltip styling */
+.AA-recharts-default-tooltip {
+  border-radius: 8px !important;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15) !important;
+  border: none !important;
+  background-color: rgba(255, 255, 255, 0.95) !important;
+  padding: 12px !important;
+}
+
+.AA-recharts-tooltip-label {
+  color: #666 !important;
+  font-weight: 500 !important;
+  margin-bottom: 8px !important;
+}
+
+.AA-recharts-tooltip-item {
+  padding: 4px 0 !important;
+}
+
+/* Responsive styles */
+@media (max-width: 992px) {
+  .AA-analytics-filters {
+    flex-direction: column;
+  }
+  
+  .AA-date-range-picker,
+  .AA-department-filter {
+    width: 100%;
+  }
+  
+  .AA-chart-card {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .AA-admin-analytics {
+    padding: 15px;
+  }
+  
+  .AA-analytics-header {
+    padding: 15px;
+  }
+  
+  .AA-metric-card {
+    margin-bottom: 16px;
+  }
+  
+  .AA-insight-item {
+    margin-bottom: 16px;
+  }
+}
+
+@media (max-width: 576px) {
+  .AA-page-title {
+    font-size: 20px;
+  }
+  
+  .AA-metric-content {
+    flex-direction: column;
+    text-align: center;
+    /* display: flex; */
+  }
+  
+  .AA-metric-icon {
+    margin-bottom: 8px;
+  }
+  
+  .AA-recharts-responsive-container {
+    min-height: 250px;
+  }
+}
+
+/* Add this to your CSS */
+.AA-admin-analytics .ant-typography h3 {
+  color: var(--text-dark)!important;
+}
+

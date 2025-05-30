@@ -1,0 +1,349 @@
+/* Jobs Page Styles */
+.JO-jobs-page {
+  max-width: 1200px;
+  margin: 90px auto;
+  padding: 0 20px;
+}
+
+/* Hero Section */
+.JO-jobs-hero {
+  /* background: linear-gradient(to right, rgba(20, 184, 166, 0.9), rgba(8, 145, 178, 0.9));
+  color: white;
+  padding: 60px 300px;
+  border-radius: 0 0 20px 20px;
+  margin-bottom: 40px;
+  text-align: center; */
+  text-align: center;
+  margin-bottom: 40px;
+  color: white;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1a365d 0%, #1890ff 100%);
+  border-radius: 8px;
+}
+
+.JO-jobs-hero h1 {
+  /* font-size: 2.5rem;
+  margin-bottom: 15px; */
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.JO-jobs-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Main Layout */
+.JO-jobs-container {
+  display: flex;
+  gap: 30px;
+}
+
+.JO-filters-sidebar {
+  flex: 0 0 280px;
+}
+
+.JO-jobs-list {
+  flex: 1;
+}
+
+/* Sidebar Styles */
+.JO-sidebar-section {
+  background: var(--section-bg);
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.JO-sidebar-section h3 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: var(--text-blue);
+}
+
+.JO-sidebar-section p {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin-bottom: 15px;
+}
+
+.JO-alert-btn, .JO-save-search-btn {
+  width: 100%;
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.JO-alert-btn {
+  background: var(--primary-gradient);
+  color: white;
+}
+
+.JO-alert-btn:hover {
+  background: linear-gradient(to bottom right, #1d4ed8, #0891b2, #14b8a6);
+}
+
+.JO-save-search-btn {
+  background: white;
+  border: 1px solid var(--primary-mid);
+  color: var(--primary-mid);
+}
+
+.JO-save-search-btn:hover {
+  background: #f0fdfa;
+}
+
+/* Jobs List Header */
+.JO-jobs-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.JO-jobs-header h2 {
+  margin: 0;
+  font-size: 1.5rem;
+  color: var(--text-dark);
+}
+
+.JO-sort-options {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.JO-sort-options label {
+  font-size: 0.9rem;
+  color: #64748b;
+}
+
+.JO-sort-options select {
+  padding: 8px 12px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  background: white;
+}
+
+/* Jobs Grid (Reusing styles from Home.css with enhancements) */
+.JO-jobs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.JO-job-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 20px;
+  transition: transform 0.2s, box-shadow 0.2s;
+  height: 100%;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+}
+
+.JO-job-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
+
+.JO-jobs-list {
+  flex: 1;
+  padding: 0 20px;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .JO-jobs-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Enhanced Job Card */
+.JO-job-card {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+.JO-job-description {
+  margin: 15px 0;
+  color: #64748b;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  flex-grow: 1;
+}
+
+/* No Results State */
+.JO-no-results {
+  text-align: center;
+  padding: 60px 20px;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.JO-no-results img {
+  max-width: 200px;
+  margin-bottom: 20px;
+}
+
+.JO-no-results h3 {
+  margin-bottom: 10px;
+  color: var(--text-dark);
+}
+
+.JO-no-results p {
+  color: #64748b;
+  margin-bottom: 20px;
+}
+
+.JO-clear-filters-btn {
+  padding: 10px 20px;
+  background: var(--primary-gradient);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.JO-clear-filters-btn:hover {
+  background: linear-gradient(to bottom right, #1d4ed8, #0891b2, #14b8a6);
+}
+
+/* Pagination */
+.JO-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 15px;
+  margin-top: 40px;
+}
+
+.JO-pagination button {
+  padding: 8px 16px;
+  border: 1px solid #e2e8f0;
+  background: var(--primary-gradient);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.JO-pagination button:hover {
+  background: var(--primary-gradient-hover);
+}
+
+.JO-pagination button:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.JO-pagination .JO-current-page {
+  font-weight: 600;
+  color: var(--text-blue);
+}
+
+/* Responsive Design */
+@media (max-width: 992px) {
+  .JO-jobs-container {
+    flex-direction: column;
+  }
+
+  .JO-filters-sidebar {
+    flex: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .JO-jobs-header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+  }
+
+  .JO-sort-options {
+    width: 100%;
+  }
+
+  .JO-sort-options select {
+    flex-grow: 1;
+  }
+}
+
+/* Loading Animation */
+.JO-loading-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  width: 100%;
+}
+
+/* Hero Section */
+.JO-jobs-hero {
+  text-align: center;
+  padding: 60px 20px;
+  background: linear-gradient(135deg, #1a365d 0%, #1890ff 100%);
+  color: white;
+  margin-bottom: 40px;
+}
+
+.JO-hero-icon {
+  font-size: 48px;
+  margin-bottom: 20px;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* Icons Styling */
+.JO-sort-icon {
+  margin-right: 8px;
+  color: #666;
+}
+
+.JO-no-results-icon {
+  font-size: 64px;
+  color: #1890ff;
+  margin-bottom: 20px;
+}
+
+[class^="anticon-"] {
+  margin-right: 8px;
+}
+
+/* Buttons with Icons */
+.JO-alert-btn,
+.JO-save-search-btn,
+.JO-clear-filters-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+/* Job Card Icons */
+.JO-job-card .JO-anticon {
+  color: #666;
+  margin-right: 6px;
+}
+
+/* Responsive Icons */
+@media (max-width: 768px) {
+  .JO-hero-icon {
+    font-size: 36px;
+  }
+  
+  .JO-no-results-icon {
+    font-size: 48px;
+  }
+}

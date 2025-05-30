@@ -1,0 +1,125 @@
+.AJM-admin-job-management {
+  max-width: 1200px;
+  margin: 70px auto;
+  padding: 20px;
+}
+
+.AJM-admin-job-management .ant-input {
+  background-color: white !important;
+  color: black !important;
+}
+
+.AJM-management-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  /* flex-wrap: wrap;
+  gap: 15px; */
+  color: white;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1a365d 0%, #1890ff 100%);
+  border-radius: 8px;
+}
+
+.AJM-page-title {
+  margin: 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 2.5rem;
+  font-weight: 700;
+}
+
+.AJM-header-actions {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.AJM-add-button {
+  padding: 10px 20px;
+  background: var(--primary-gradient);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  font-weight: 500;
+  text-decoration: none;
+  transition: all 0.2s ease;
+}
+
+.AJM-add-button:hover {
+  background: linear-gradient(to bottom right, #1d4ed8, #0891b2, #14b8a6);
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.2);
+}
+
+.AJM-search-bar {
+  width: 300px;
+}
+
+.AJM-management-tabs .AJM-ant-tabs-nav {
+  margin-bottom: 20px;
+}
+
+.AJM-data-table {
+  margin-top: 10px;
+}
+
+.AJM-job-cell,
+.AJM-company-cell {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.AJM-job-icon,
+.AJM-company-icon {
+  font-size: 20px;
+  color: #1890ff;
+}
+
+.AJM-job-title,
+.AJM-company-name {
+  font-weight: 500;
+}
+
+.AJM-job-company,
+.AJM-company-industry {
+  color: #666;
+  font-size: 0.85rem;
+}
+
+.AJM-job-form .AJM-form-group,
+.AJM-company-form .AJM-form-group {
+  margin-bottom: 20px;
+}
+
+.AJM-job-form label,
+.AJM-company-form label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.AJM-job-form .AJM-ant-input,
+.AJM-job-form .AJM-ant-select,
+.AJM-company-form .AJM-ant-input,
+.AJM-company-form .AJM-ant-select {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .AJM-management-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .AJM-header-actions {
+    width: 100%;
+  }
+
+  .AJM-search-bar {
+    width: 100%;
+  }
+}
+

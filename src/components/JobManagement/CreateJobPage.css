@@ -1,0 +1,231 @@
+.CJP-create-job-container {
+  max-width: 1200px;
+  margin: 70px auto;
+  padding: 30px 20px;
+}
+
+.CJP-create-job-header {
+  /* margin-bottom: 30px;
+  text-align: center; */
+  text-align: center;
+  margin-bottom: 20px;
+  color: white;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1a365d 0%, #1890ff 100%);
+  border-radius: 8px;
+}
+
+.CJP-create-job-header h1 {
+  /* font-size: 2rem;
+  color: var(--primary-dark);
+  margin-bottom: 10px; */
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  font-weight: 700;
+}
+
+.CJP-create-job-header p {
+  /* color: #64748b;
+  font-size: 1.1rem; */
+  font-size: 1.2rem;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.CJP-job-form {
+  background: var(--card-bg);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.CJP-form-section {
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.CJP-form-section:last-child {
+  border-bottom: none;
+  margin-bottom: 0;
+  padding-bottom: 0;
+}
+
+.CJP-form-section h2 {
+  font-size: 1.3rem;
+  color: var(--text-blue);
+  margin-bottom: 20px;
+}
+
+.CJP-form-group {
+  margin-bottom: 20px;
+}
+
+.CJP-form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.CJP-form-group input,
+.CJP-form-group select,
+.CJP-form-group textarea {
+  width: 100%;
+  padding: 12px 15px;
+  border: 1px solid #e2e8f0;
+  border-radius: 6px;
+  font-size: 1rem;
+  transition: border-color 0.2s;
+}
+
+.CJP-form-group input:focus,
+.CJP-form-group select:focus,
+.CJP-form-group textarea:focus {
+  outline: none;
+  border-color: var(--primary-mid);
+  box-shadow: 0 0 0 3px rgba(8, 145, 178, 0.1);
+}
+
+.CJP-form-group textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.CJP-form-row {
+  display: flex;
+  gap: 20px;
+}
+
+.CJP-form-row .CJP-form-group {
+  flex: 1;
+}
+
+.CJP-skills-input-container {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.CJP-skills-input-container input {
+  flex: 1;
+}
+
+.CJP-add-skill-btn {
+  padding: 0 15px;
+  background: var(--primary-light);
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.CJP-skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.CJP-skill-tag {
+  background: #f1f5f9;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.CJP-remove-skill {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  cursor: pointer;
+  padding: 0;
+  font-size: 1rem;
+  line-height: 1;
+}
+
+.CJP-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.CJP-btn {
+  padding: 12px 24px;
+  border-radius: 6px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.CJP-btn-outline {
+  background: white;
+  border: 1px solid #e2e8f0;
+  color: var(--text-dark);
+}
+
+.CJP-btn-outline:hover {
+  background: #f8fafc;
+}
+
+.CJP-btn-primary {
+  background: var(--primary-gradient);
+  color: white;
+  border: none;
+}
+
+.CJP-btn-primary:hover {
+  background: linear-gradient(to bottom right, #1d4ed8, #0891b2, #14b8a6);
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.2);
+}
+
+.CJP-btn-primary:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+@media (max-width: 768px) {
+  .CJP-form-row {
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .CJP-form-actions {
+    flex-direction: column;
+  }
+  
+  .CJP-btn {
+    width: 100%;
+  }
+}
+
+.CJP-status-options {
+  display: flex;
+  gap: 10px;
+  margin-top: 8px;
+}
+
+.CJP-status-btn {
+  padding: 6px 12px;
+  border: 1px solid #d9d9d9;
+  border-radius: 4px;
+  background: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.CJP-status-btn.active {
+  background: #1890ff;
+  color: white;
+  border-color: #1890ff;
+}
+
+.CJP-status-btn:hover:not(.active) {
+  border-color: #1890ff;
+  color: #1890ff;
+}
+
+

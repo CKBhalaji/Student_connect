@@ -1,0 +1,234 @@
+.JDP-job-detail-container {
+  max-width: 1200px;
+  margin: 70px auto;
+  padding: 30px 20px;
+}
+
+.JDP-back-button {
+  background: none;
+  border: none;
+  color: var(--primary-mid);
+  font-size: 1rem;
+  margin-bottom: 20px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.JDP-back-button:hover {
+  text-decoration: underline;
+}
+
+.JDP-job-header {
+  margin-bottom: 40px;
+}
+
+.JDP-job-header h1 {
+  font-size: 2rem;
+  color: var(--text-dark);
+  margin-bottom: 5px;
+}
+
+.JDP-job-header h2 {
+  font-size: 1.5rem;
+  color: var(--primary-dark);
+  margin-bottom: 20px;
+}
+
+.JDP-job-meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  margin-top: 15px;
+  align-items: center;
+}
+
+.JDP-job-type {
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.JDP-job-type.JDP-internship {
+  background-color: rgba(14, 165, 233, 0.1);
+  color: #0ea5e9;
+}
+
+.JDP-job-type.JDP-full-time {
+  background-color: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+.JDP-job-location,
+.JDP-job-salary {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: #64748b;
+}
+
+.JDP-job-content {
+  display: flex;
+  gap: 40px;
+}
+
+.JDP-job-main {
+  flex: 2;
+}
+
+.JDP-job-sidebar {
+  flex: 1;
+}
+
+.JDP-job-section {
+  margin-bottom: 30px;
+}
+
+.JDP-job-section h3 {
+  font-size: 1.3rem;
+  color: var(--primary-dark);
+  margin-bottom: 15px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #f1f5f9;
+}
+
+.JDP-job-description {
+  line-height: 1.6;
+  color: #334155;
+  white-space: pre-line;
+}
+
+.JDP-requirements-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.JDP-requirement-item {
+  position: relative;
+  padding-left: 20px;
+  line-height: 1.5;
+  color: #334155;
+}
+
+.JDP-requirement-item::before {
+  content: '•';
+  position: absolute;
+  left: 0;
+  color: var(--primary-mid);
+  font-size: 1.2rem;
+}
+
+.JDP-skills-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.JDP-skill-tag {
+  background: #f1f5f9;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 0.9rem;
+}
+
+.JDP-sidebar-card {
+  background: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.JDP-sidebar-card h4 {
+  margin-top: 0;
+  margin-bottom: 15px;
+  color: var(--primary-dark);
+}
+
+.JDP-detail-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.JDP-detail-label {
+  font-weight: 500;
+  color: var(--text-dark);
+}
+
+.JDP-recruiter-info {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.JDP-recruiter-avatar {
+  width: 50px;
+  height: 50px;
+  background: var(--primary-gradient);
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+  font-size: 1.2rem;
+}
+
+.JDP-recruiter-name {
+  font-weight: 500;
+  margin: 0;
+}
+
+.JDP-recruiter-position {
+  color: #64748b;
+  font-size: 0.9rem;
+  margin: 0;
+}
+
+.JDP-apply-button {
+  width: 100%;
+  padding: 15px;
+  background: var(--primary-gradient);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  margin-top: 20px;
+}
+
+.JDP-apply-button:hover {
+  background: linear-gradient(to bottom right, #1d4ed8, #0891b2, #14b8a6);
+  box-shadow: 0 4px 12px rgba(20, 184, 166, 0.2);
+}
+
+.JDP-loading-spinner {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2rem;
+  color: var(--primary-mid);
+}
+
+.JDP-not-found {
+  text-align: center;
+  padding: 50px;
+  font-size: 1.2rem;
+  color: var(--error-color);
+}
+
+@media (max-width: 992px) {
+  .JDP-job-content {
+    flex-direction: column;
+  }
+  
+  .JDP-job-sidebar {
+    order: -1;
+    margin-bottom: 40px;
+  }
+}

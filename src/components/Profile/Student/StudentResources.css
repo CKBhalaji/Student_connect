@@ -1,0 +1,295 @@
+/* Hero Section */
+.SR-student-hero {
+  text-align: center;
+  margin-bottom: 10px;
+  color: white!important;
+  padding: 40px 20px;
+  background: linear-gradient(135deg, #1a365d 0%, #1890ff 100%);
+  border-radius: 8px;
+}
+
+.SR-student-hero h1 {
+  font-size: 2.5rem;
+  /* weight: 700; */
+  /* margin-bottom: 15px; */
+}
+
+.SR-student-hero p {
+  font-size: 1.2rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* Main Container */
+.SR-student-resources-container {
+  max-width: 1200px;
+  margin: 70px auto;
+  padding: 20px;
+  text-color: #333;
+}
+.SR-student-resources-container,
+.SR-student-resources-container * {
+  color: var(--text-dark);
+}
+
+.SR-student-resources-container .ant-input,
+.SR-student-resources-container .ant-input-prefix,
+.SR-student-resources-container .ant-select-selector,
+.SR-student-resources-container .ant-select-selection-item,
+.SR-student-resources-container .ant-form-item-label > label {
+  color: var(--text-dark)!important;
+}
+
+.SR-student-resources-container .ant-input,
+.SR-student-resources-container .ant-select-selector {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: rgba(255, 255, 255, 0.3) !important;
+  color: var(--text-dark)!important;
+}
+
+.SD-dashboard-content {
+  color: white;
+}
+/* Tabs */
+.SR-resources-tabs .SR-ant-tabs-nav {
+  margin-bottom: 25px;
+}
+
+/* Resume Builder Section */
+.SR-resume-builder-section {
+  color: white;
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.SR-builder-left {
+  flex: 1;
+}
+
+.SR-builder-right {
+  flex: 2;
+}
+
+.SR-form-card {
+  margin-bottom: 20px;
+}
+
+.SR-form-list-item {
+  background: #f9f9f9;
+  padding: 15px;
+  border-radius: 4px;
+  margin-bottom: 15px;
+}
+
+.SR-preview-card {
+  height: 100%;
+}
+
+.SR-resume-preview {
+  min-height: 300px;
+  padding: 15px;
+  border: 1px dashed #ddd;
+  margin-bottom: 20px;
+}
+
+.SR-template-selection {
+  margin-top: 30px;
+}
+
+.SR-template-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  margin-top: 15px;
+}
+
+.SR-template-card {
+  border: 1px solid #eee;
+  padding: 15px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.SR-template-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.SR-download-options {
+  margin-top: 30px;
+}
+
+.SR-download-buttons {
+  display: flex;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+/* ATS Checker Section */
+.SR-ats-checker-section {
+  display: flex;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.SR-ats-left {
+  flex: 1;
+}
+
+.SR-ats-right {
+  width: 350px;
+}
+
+.SR-upload-card,
+.SR-job-description-card,
+.SR-score-card,
+.SR-keyword-card {
+  margin-bottom: 20px;
+}
+
+.SR-upload-note {
+  color: #888;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.SR-resume-text-preview {
+  margin-top: 20px;
+  padding: 15px;
+  background: #f5f5f5;
+  border-radius: 4px;
+  color: black;
+}
+
+.SR-student-resources-container .ant-input,
+.SR-student-resources-container .ant-input-prefix,
+.SR-student-resources-container .ant-input-textarea-show-count::after,
+.SR-student-resources-container .ant-select-selection-item,
+.SR-student-resources-container .ant-select-selector {
+  color: black !important;
+}
+
+.SR-student-resources-container .ant-input,
+.SR-student-resources-container .ant-select-selector,
+.SR-student-resources-container .ant-input-textarea {
+  background-color: rgba(255, 255, 255, 0.9) !important;
+  border-color: #d9d9d9 !important;
+}
+
+/* Placeholder text */
+.SR-student-resources-container .ant-input::placeholder {
+  color: #666 !important;
+}
+
+/* Form labels remain white */
+.SR-student-resources-container .ant-form-item-label > label {
+  color: white !important;
+}
+
+/* Focus states */
+.SR-student-resources-container .ant-input:focus,
+.SR-student-resources-container .ant-input-focused {
+  box-shadow: 0 0 0 2px rgba(255, 255, 255, 0.2);
+}
+
+/* Dropdown text */
+.SR-student-resources-container .ant-select-item-option-content {
+  color: black !important;
+}
+
+.SR-score-display {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  margin: 20px 0;
+}
+
+.SR-improvement-tips ul {
+  padding-left: 20px;
+}
+
+/* Career Resources Section */
+.SR-career-resources-section {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.SR-resource-list {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.SR-resource-item {
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 4px;
+}
+
+/* General Styles */
+.SR-anticon {
+  margin-right: 8px;
+}
+
+.SR-spin-container {
+  display: flex;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .SR-resume-builder-section,
+  .SR-ats-checker-section {
+    flex-direction: column;
+  }
+
+  .SR-builder-right,
+  .SR-ats-right {
+    width: 100%;
+  }
+}
+
+@media (max-width: 768px) {
+  .SR-student-hero {
+    padding: 40px 15px;
+  }
+
+  .SR-student-hero h1 {
+    font-size: 2rem;
+  }
+
+  .SR-student-hero p {
+    font-size: 1rem;
+  }
+
+  .SR-score-display {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .SR-resource-list {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 576px) {
+  .SR-student-resources-container {
+    padding: 15px;
+  }
+
+  .SR-download-buttons {
+    flex-direction: column;
+  }
+
+  .SR-template-card img {
+    height: 150px;
+  }
+}
