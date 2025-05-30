@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#3498db;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#2c3e50;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  
+  <rect width="800" height="600" fill="#f8f9fa"/>
+  
+  <!-- Abstract people -->
+  <circle cx="200" cy="300" r="80" fill="url(#grad1)" opacity="0.8"/>
+  <circle cx="200" cy="240" r="20" fill="#fff"/>
+  <path d="M200 280 Q220 320 180 330" stroke="#fff" stroke-width="3" fill="none"/>
+  
+  <!-- Student figure -->
+  <circle cx="400" cy="250" r="30" fill="#3498db"/>
+  <path d="M400 280 L400 350" stroke="#3498db" stroke-width="8"/>
+  <path d="M400 300 L350 330" stroke="#3498db" stroke-width="6"/>
+  <path d="M400 300 L450 330" stroke="#3498db" stroke-width="6"/>
+  <path d="M400 350 L370 420" stroke="#3498db" stroke-width="6"/>
+  <path d="M400 350 L430 420" stroke="#3498db" stroke-width="6"/>
+  
+  <!-- Recruiter figure -->
+  <circle cx="600" cy="250" r="30" fill="#2c3e50"/>
+  <path d="M600 280 L600 350" stroke="#2c3e50" stroke-width="8"/>
+  <path d="M600 300 L550 330" stroke="#2c3e50" stroke-width="6"/>
+  <path d="M600 300 L650 330" stroke="#2c3e50" stroke-width="6"/>
+  <path d="M600 350 L570 420" stroke="#2c3e50" stroke-width="6"/>
+  <path d="M600 350 L630 420" stroke="#2c3e50" stroke-width="6"/>
+  
+  <!-- Connection line -->
+  <path d="M400 250 Q500 150 600 250" stroke="#e74c3c" stroke-width="4" stroke-dasharray="10,5" fill="none"/>
+  
+  <!-- Document icon between them -->
+  <rect x="480" y="200" width="40" height="50" rx="5" fill="#fff" stroke="#2c3e50" stroke-width="2"/>
+  <line x1="485" y1="215" x2="515" y2="215" stroke="#2c3e50" stroke-width="2"/>
+  <line x1="485" y1="225" x2="515" y2="225" stroke="#2c3e50" stroke-width="2"/>
+  <line x1="485" y1="235" x2="515" y2="235" stroke="#2c3e50" stroke-width="2"/>
+</svg>
