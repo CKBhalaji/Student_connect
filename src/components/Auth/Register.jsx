@@ -127,7 +127,7 @@ const Register = () => {
       // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 1500));
       setSuccess(true);
-      setTimeout(() => navigate('/login'), 2000);
+      setTimeout(() => navigate('/Student_connect/login'), 2000);
     } catch (err) {
       setErrors({ ...errors, api: err.message || 'Registration failed' });
     } finally {
@@ -143,7 +143,7 @@ const Register = () => {
             <CheckCircleOutlined className="RE-success-icon animated-check" />
             <h2>Registration Successful!</h2>
             <p>You will be redirected to the login page shortly.</p>
-            <p>If not, <Link to="/login">click here</Link> to login.</p>
+            <p>If not, <Link to="/Student_connect/login">click here</Link> to login.</p>
           </div>
         </div>
       </div>
@@ -446,7 +446,7 @@ const Register = () => {
                   onChange={handleChange}
                 />
                 <span className="RE-checkmark"></span>
-                I agree to the <Link to="/terms">Terms of Service</Link> and <Link to="/privacy">Privacy Policy</Link>
+                I agree to the <Link to="/Student_connect/terms">Terms of Service</Link> and <Link to="/Student_connect/privacy">Privacy Policy</Link>
               </label>
               {errors.agreeTerms && <span className="RE-error-message">{errors.agreeTerms}</span>}
             </div>
@@ -476,7 +476,7 @@ const Register = () => {
             </button>
           </div>
         </div>
-        <p>Already have an account? <Link to="/login">Sign in</Link></p>
+        <p>Already have an account? <Link to="/Student_connect/login">Sign in</Link></p>
       </div>
     </div>
     </div >

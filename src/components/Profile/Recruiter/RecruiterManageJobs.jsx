@@ -158,7 +158,7 @@ const RecruiterManageJobs = () => {
   };
 
   const handleEditJob = (id) => {
-    navigate(`/edit-job/${id}`);
+    navigate(`/Student_connect/edit-job/${id}`);
   };
 
   const handleDeleteJob = (id) => {
@@ -230,7 +230,7 @@ const RecruiterManageJobs = () => {
       dataIndex: 'applicants',
       key: 'applicants',
       render: (applicants, record) => (
-        <Link to={`/job/${record.id}/applicants`}>{applicants}</Link>
+        <Link to={`/Student_connect/job/${record.id}/applicants`}>{applicants}</Link>
       ),
       sorter: (a, b) => a.applicants - b.applicants
     },
@@ -286,7 +286,7 @@ const RecruiterManageJobs = () => {
       <div className="RMJ-page-header">
         <h1><ScheduleOutlined/> Manage Job Postings</h1>
         <div className="RMJ-header-actions">
-          <Link to="/create-job" className="RMJ-create-job-btn">
+          <Link to="/Student_connect/create-job" className="RMJ-create-job-btn">
             <PlusOutlined /> Post New Job
           </Link>
         </div>
@@ -337,7 +337,7 @@ const RecruiterManageJobs = () => {
             type="primary"
             onClick={() => {
               setIsModalVisible(false);
-              navigate(`/job/${selectedJob?.id}/applicants`);
+              navigate(`/Student_connect/job/${selectedJob?.id}/applicants`);
             }}
           >
             View Applicants
@@ -386,7 +386,7 @@ const RecruiterManageJobs = () => {
             <div className="RMJ-detail-row">
               <span className="RMJ-detail-label">Total Applicants:</span>
               <span className="RMJ-detail-value">
-                <Link to={`/job/${selectedJob.id}/applicants`}>
+                <Link to={`/Student_connect/job/${selectedJob.id}/applicants`}>
                   {selectedJob.applicants} applicants
                 </Link>
               </span>

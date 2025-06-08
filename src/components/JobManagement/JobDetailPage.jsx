@@ -41,7 +41,7 @@ const JobDetailPage = () => {
         if (foundJob) {
           setJob(foundJob);
         } else {
-          navigate('/jobs');
+          navigate('/Student_connect/jobs');
         }
       } catch (error) {
         console.error('Error fetching job:', error);

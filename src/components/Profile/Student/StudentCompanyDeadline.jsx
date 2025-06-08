@@ -292,7 +292,7 @@ const StudentCompanyDeadline = () => {
                         <Option value="Assessment">Assessments</Option>
                         <Option value="Event">Events</Option>
                     </Select>
-                    <Link to="/jobs">
+                    <Link to="/Student_connect/jobs">
                         <Button type="primary">Browse Jobs</Button>
                     </Link>
                 </div>

@@ -387,7 +387,7 @@ const StudentApplication = () => {
             description={
               <span>
                 No applications match your filters.
-                <Link to="/jobs">Browse jobs</Link> to apply.
+                <Link to="/Student_connect/jobs">Browse jobs</Link> to apply.
               </span>
             }
           />

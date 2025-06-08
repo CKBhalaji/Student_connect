@@ -61,7 +61,7 @@ const CreateJobPage = () => {
     e.preventDefault();
     // API call would go here
     console.log('Creating job:', newJob);
-    navigate('/recruiter-dashboard');
+    navigate('/Student_connect/recruiter-dashboard');
   };
 
   return (
@@ -239,7 +239,7 @@ const CreateJobPage = () => {
           <button
             type="button"
             className="CJP-btn btn-outline"
-            onClick={() => navigate('/recruiter-dashboard')}
+            onClick={() => navigate('/Student_connect/recruiter-dashboard')}
           >
             <DeleteColumnOutlined/> Cancel
           </button>

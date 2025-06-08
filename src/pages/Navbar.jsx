@@ -48,10 +48,10 @@ const Navbar = () => {
     // Simulate API call for resources
     const timer = setTimeout(() => {
       setResources([
-        { name: 'Blog', path: '/blog' },
-        { name: 'FAQ', path: '/faq' },
-        { name: 'Contact', path: '/contact' },
-        { name: 'Documentation', path: '/documentation' }
+        { name: 'Blog', path: '/Student_connect/blog' },
+        { name: 'FAQ', path: '/Student_connect/faq' },
+        { name: 'Contact', path: '/Student_connect/contact' },
+        { name: 'Documentation', path: '/Student_connect/documentation' }
       ]);
       setLoadingResources(false);
     }, 1500);
@@ -86,7 +86,7 @@ const Navbar = () => {
         {userRole === 'admin' && !loadingResources && (
           <>
             <div className="dropdown-divider"></div>
-            <Link to="/admin-documentation" className="dropdown-item">
+            <Link to="/Student_connect/admin-documentation" className="dropdown-item">
               Admin Docs
             </Link>
           </>
@@ -114,8 +114,8 @@ const Navbar = () => {
             {/* {theme === 'light' ? <SunOutlined /> : <MoonOutlined />} */}
             {theme === 'light' ?  <MoonFilled /> : <SunOutlined />}
           </button>
-          <Link to="/login" className="btn btn-outline">Login</Link>
-          <Link to="/register" className="btn btn-primary">Sign Up</Link>
+          <Link to="/Student_connect/login" className="btn btn-outline">Login</Link>
+          <Link to="/Student_connect/register" className="btn btn-primary">Sign Up</Link>
         </div>
       );
     }
@@ -165,8 +165,8 @@ const Navbar = () => {
           <div className="profile-dropdown">
             <Link
               to={
-                userRole === 'admin' ? '/admin-panel' :
-                  userRole === 'student' ? '/student_profile' : '/recruiter_profile'
+                userRole === 'admin' ? '/Student_connect/admin-panel' :
+                  userRole === 'student' ? '/Student_connect/student_profile' : '/Student_connect/recruiter_profile'
               }
               className="profile-dropdown-item"
             >
@@ -174,10 +174,10 @@ const Navbar = () => {
             </Link>
             {userRole === 'admin' && (
               <>
-                <Link to="/admin-settings" className="profile-dropdown-item">
+                <Link to="/Student_connect/admin-settings" className="profile-dropdown-item">
                   Admin Settings
                 </Link>
-                <Link to="/admin-audit-log" className="profile-dropdown-item">
+                <Link to="/Student_connect/admin-audit-log" className="profile-dropdown-item">
                   Audit Log
                 </Link>
               </>
@@ -194,9 +194,9 @@ const Navbar = () => {
     if (!isAuthenticated) {
       return (
         <>
-          <NavLink to="/jobs" className="nav-link">Jobs/Internships</NavLink>
-          <NavLink to="/login?role=student" className="nav-link">For Students</NavLink>
-          <NavLink to="/login?role=recruiter" className="nav-link">For Recruiters</NavLink>
+          <NavLink to="/Student_connect/jobs" className="nav-link">Jobs/Internships</NavLink>
+          <NavLink to="/Student_connect/login?role=student" className="nav-link">For Students</NavLink>
+          <NavLink to="/Student_connect/login?role=recruiter" className="nav-link">For Recruiters</NavLink>
         </>
       );
     }
@@ -204,10 +204,10 @@ const Navbar = () => {
     if (userRole === 'student') {
       return (
         <>
-          <NavLink to="/jobs" className="nav-link">Available Jobs</NavLink>
-          <NavLink to="/student-applications" className="nav-link">My Applications</NavLink>
-          <NavLink to="/student-resources" className="nav-link">Resources</NavLink>
-          <NavLink to="/student-dashboard" className="nav-link">Dashboard</NavLink>
+          <NavLink to="/Student_connect/jobs" className="nav-link">Available Jobs</NavLink>
+          <NavLink to="/Student_connect/student-applications" className="nav-link">My Applications</NavLink>
+          <NavLink to="/Student_connect/student-resources" className="nav-link">Resources</NavLink>
+          <NavLink to="/Student_connect/student-dashboard" className="nav-link">Dashboard</NavLink>
         </>
       );
     }
@@ -215,10 +215,10 @@ const Navbar = () => {
     if (userRole === 'recruiter') {
       return (
         <>
-          <NavLink to="/create-job" className="nav-link">Post a Job</NavLink>
-          <NavLink to="/recruiter-manage-jobs" className="nav-link">Manage Jobs</NavLink>
-          <NavLink to="/recruiter-analytics" className="nav-link">Analytics</NavLink>
-          <NavLink to="/recruiter-dashboard" className="nav-link">Dashboard</NavLink>
+          <NavLink to="/Student_connect/create-job" className="nav-link">Post a Job</NavLink>
+          <NavLink to="/Student_connect/recruiter-manage-jobs" className="nav-link">Manage Jobs</NavLink>
+          <NavLink to="/Student_connect/recruiter-analytics" className="nav-link">Analytics</NavLink>
+          <NavLink to="/Student_connect/recruiter-dashboard" className="nav-link">Dashboard</NavLink>
         </>
       );
     }
@@ -226,9 +226,9 @@ const Navbar = () => {
     if (userRole === 'admin') {
       return (
         <>
-          <NavLink to="/admin-users" className="nav-link">User Management</NavLink>
-          <NavLink to="/admin-jobs" className="nav-link">Job Management</NavLink>
-          <NavLink to="/admin-analytics" className="nav-link">Analytics</NavLink>
+          <NavLink to="/Student_connect/admin-users" className="nav-link">User Management</NavLink>
+          <NavLink to="/Student_connect/admin-jobs" className="nav-link">Job Management</NavLink>
+          <NavLink to="/Student_connect/admin-analytics" className="nav-link">Analytics</NavLink>
           {/* <NavLink to="/admin/system" className="nav-link">System</NavLink> */}
         </>
       );
@@ -244,7 +244,7 @@ const Navbar = () => {
               <div className="loading-line-short"></div>
             </div>
           ) : (
-            <Link to="/">
+            <Link to="/Student_connect">
               <span className="logo-icon">{APP_FIRST_LETTER}</span>
               <span className="logo-text">{APP_NAME}</span>
             </Link>

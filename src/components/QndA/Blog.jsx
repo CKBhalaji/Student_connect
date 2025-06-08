@@ -60,7 +60,7 @@ const Blog = () => {
           date: '2023-05-15',
           category: 'Interview Tips',
           tags: ['Technical Interview', 'Career Advice', 'Coding'],
-          image: '/images/technical-interview.jpg',
+          image: 'https://randomuser.me/api/portraits/women/63.jpg',
           views: 1245
         },
         {
@@ -91,7 +91,7 @@ const Blog = () => {
           date: '2023-06-02',
           category: 'Resume Building',
           tags: ['Resume', 'Job Application', 'Career Development'],
-          image: '/images/resume-building.jpg',
+          image: 'https://randomuser.me/api/portraits/men/65.jpg',
           views: 982
         },
         {
@@ -122,7 +122,7 @@ const Blog = () => {
           date: '2023-06-10',
           category: 'Networking',
           tags: ['Networking', 'Professional Development', 'Career Growth'],
-          image: '/images/networking.jpg',
+          image: 'https://randomuser.me/api/portraits/men/60.jpg',
           views: 756
         },
         {
@@ -153,7 +153,7 @@ const Blog = () => {
           date: '2023-06-18',
           category: 'Work Tips',
           tags: ['Remote Work', 'Productivity', 'Work-Life Balance'],
-          image: '/images/remote-work.jpg',
+          image: 'https://randomuser.me/api/portraits/men/78.jpg',
           views: 1102
         },
         {
@@ -184,7 +184,7 @@ const Blog = () => {
           date: '2023-06-25',
           category: 'Career Development',
           tags: ['Career Change', 'Professional Growth', 'Skill Development'],
-          image: '/images/career-transition.jpg',
+          image: 'https://randomuser.me/api/portraits/women/68.jpg',
           views: 845
         },
         {
@@ -215,7 +215,7 @@ const Blog = () => {
           date: '2023-07-05',
           category: 'Industry Trends',
           tags: ['Artificial Intelligence', 'Recruitment', 'Technology Trends'],
-          image: '/images/ai-recruitment.jpg',
+          image: 'https://randomuser.me/api/portraits/women/69.jpg',
           views: 1320
         }
       ];

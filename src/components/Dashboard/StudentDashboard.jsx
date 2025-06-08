@@ -118,10 +118,10 @@ const StudentDashboard = () => {
         <div className="SD-dashboard-header">
           <h1>Welcome back, {profileData.fullName.split(' ')[0]}!</h1>
           <div className="SD-header-actions">
-            <Link to="/student_profile" className="SD-edit-profile-btn">
+            <Link to="/Student_connect/student_profile" className="SD-edit-profile-btn">
               <EditOutlined /> Edit Profile
             </Link>
-            <Link to="/jobs" className="SD-browse-jobs-btn">
+            <Link to="/Student_connect/jobs" className="SD-browse-jobs-btn">
               <SearchOutlined /> Browse Jobs
             </Link>
           </div>
@@ -154,7 +154,7 @@ const StudentDashboard = () => {
                 </div>
               </div>
             </div>
-            <Link to="/student_profile" className="SD-view-full-profile">
+            <Link to="/Student_connect/student_profile" className="SD-view-full-profile">
               View Full Profile <RightOutlined />
             </Link>
           </div>
@@ -175,7 +175,7 @@ const StudentDashboard = () => {
                 </div>
               ))}
             </div>
-            <Link to="/student-company-deadline" className="SD-view-all-deadlines">
+            <Link to="/Student_connect/student-company-deadline" className="SD-view-all-deadlines">
               View All <RightOutlined />
             </Link>
           </div>
@@ -209,7 +209,7 @@ const StudentDashboard = () => {
                 </div>
               ))}
             </div>
-            <Link to="/student-applications" className="SD-view-all-applications">
+            <Link to="/Student_connect/student-applications" className="SD-view-all-applications">
               View All <RightOutlined />
             </Link>
           </div>
@@ -242,7 +242,7 @@ const StudentDashboard = () => {
                 </div>
               ))}
             </div>
-            <Link to="/jobs" className="SD-browse-more-jobs">
+            <Link to="/Student_connect/jobs" className="SD-browse-more-jobs">
               Browse More <RightOutlined />
             </Link>
           </div>

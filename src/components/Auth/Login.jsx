@@ -56,11 +56,11 @@ const Login = () => {
       
       // Navigation based on role
       if (activeRole === 'student') {
-        navigate('/student-dashboard');
+        navigate('/Student_connect/student-dashboard');
       } else if (activeRole === 'recruiter') {
-        navigate('/recruiter-dashboard');
+        navigate('/Student_connect/recruiter-dashboard');
       } else if (activeRole === 'admin') {
-        navigate('/admin-panel');
+        navigate('/Student_connect/admin-panel');
       }
     } catch (err) {
       setError('Invalid email or password. Please try again.');
@@ -119,7 +119,7 @@ const Login = () => {
           <div className="LO-form-group">
             <div className="LO-password-label">
               <label htmlFor="password">Password</label>
-              <Link to="/forgot-password" className="LO-forgot-password">
+              <Link to="/Student_connect/forgot-password" className="LO-forgot-password">
                 Forgot password?
               </Link>
             </div>
@@ -160,7 +160,7 @@ const Login = () => {
         </form>
 
         <div className="LO-login-footer">
-          <p>Don't have an account? <Link to="/register">Sign up</Link></p>
+          <p>Don't have an account? <Link to="/Student_connect/register">Sign up</Link></p>
           <div className="LO-social-login">
             <p>Or sign in with:</p>
             <div className="LO-social-icons">

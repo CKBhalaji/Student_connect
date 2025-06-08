@@ -43,10 +43,10 @@ const JobCard = ({ id, title, company, type, location, salary, posted, skills, d
       </div>
 
       <div className="JC-job-actions">
-        <Link to={`/jobs/${id}`} className="JC-view-details">
+        <Link to={`/Student_connect/jobs/${id}`} className="JC-view-details">
           View Details
         </Link>
-        <Link to={`/apply/${id}`} className="JC-apply-btn">
+        <Link to={`/Student_connect/apply/${id}`} className="JC-apply-btn">
           Quick Apply
         </Link>
       </div>

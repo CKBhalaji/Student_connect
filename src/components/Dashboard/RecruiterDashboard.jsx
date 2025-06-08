@@ -30,9 +30,9 @@ const RecruiterDashboard = () => {
   const [recentApplications, setRecentApplications] = useState([]);
   const [analytics, setAnalytics] = useState({});
   const [quickActions] = useState([
-    { id: 1, title: 'Post New Job', icon: <PlusOutlined className="RD-action-icon" />, link: '/create-job' },
-    { id: 2, title: 'Review Applications', icon: <FileTextOutlined className="RD-action-icon" />, link: '/recruiter-student-applications' },
-    { id: 3, title: 'Schedule Interview', icon: <ScheduleOutlined className="RD-action-icon" />, link: '/recruiter-schedule-interview' },
+    { id: 1, title: 'Post New Job', icon: <PlusOutlined className="RD-action-icon" />, link: '/Student_connect/create-job' },
+    { id: 2, title: 'Review Applications', icon: <FileTextOutlined className="RD-action-icon" />, link: '/Student_connect/recruiter-student-applications' },
+    { id: 3, title: 'Schedule Interview', icon: <ScheduleOutlined className="RD-action-icon" />, link: '/Student_connect/recruiter-schedule-interview' },
     // { id: 4, title: 'View Candidates', icon: '👥', link: '/candidates' }
   ]);
   const [isStatusDropdownVisible, setIsStatusDropdownVisible] = useState(false);
@@ -131,7 +131,7 @@ const RecruiterDashboard = () => {
       <div className="RD-dashboard-header">
         <h1><TeamOutlined/> Recruiter Dashboard</h1>
         <div className="RD-header-actions">
-          <Link to="/create-job" className="RD-primary-btn">
+          <Link to="/Student_connect/create-job" className="RD-primary-btn">
           <PlusOutlined /> Post New Job
           </Link>
         </div>
@@ -233,14 +233,14 @@ const RecruiterDashboard = () => {
                         <span className={`status-badge ${job.status.toLowerCase()}`}>
                           {job.status}
                         </span>
-                        <Link to={`/recruiter-student-applications?position=${encodeURIComponent(job.title)}`} className="RD-view-applicants">
+                        <Link to={`/Student_connect/recruiter-student-applications?position=${encodeURIComponent(job.title)}`} className="RD-view-applicants">
                           View Applicants
                         </Link>
                       </div>
                     </div>
                   ))}
                 </div>
-                <Link to="/recruiter-manage-jobs" className="RD-view-all-jobs">
+                <Link to="/Student_connect/recruiter-manage-jobs" className="RD-view-all-jobs">
                   View All Jobs <ArrowRightOutlined />
                 </Link>
               </>
@@ -310,7 +310,7 @@ const RecruiterDashboard = () => {
                     </div>
                   ))}
                 </div>
-                <Link to="/recruiter-student-applications" className="RD-view-all-applications">
+                <Link to="/Student_connect/recruiter-student-applications" className="RD-view-all-applications">
                   View All Applications <ArrowRightOutlined/>
                 </Link>
               </>
@@ -462,7 +462,7 @@ const RecruiterDashboard = () => {
           <div className="RD-interviews-list">
             <div className="RD-no-interviews">
               <p>You have no upcoming interviews scheduled</p>
-              <Link to="/recruiter-schedule-interview" className="RD-schedule-btn">
+              <Link to="/Student_connect/recruiter-schedule-interview" className="RD-schedule-btn">
                 <ClockCircleOutlined/> Schedule an Interview
               </Link>
             </div>

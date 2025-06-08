@@ -32,7 +32,7 @@ export const AuthProvider = ({ children }) => {
     localStorage.removeItem('isAuthenticated');
     localStorage.removeItem('userRole');
     localStorage.removeItem('userData');
-    window.location.href = '/login';
+    window.location.href = '/Student_connect/login';
   };
 
   return (

@@ -115,7 +115,7 @@ const RecruiterScheduleInterview = () => {
       // Simulate API call
       await new Promise(resolve => setTimeout(resolve, 1000));
       message.success('Interview scheduled successfully!');
-      navigate('/recruiter-dashboard');
+      navigate('/Student_connect/recruiter-dashboard');
     } catch (error) {
       message.error('Failed to schedule interview');
     } finally {

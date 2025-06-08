@@ -207,10 +207,10 @@ const Contact = () => {
 
                         <Title level={3} className="CON-info-title">Quick Links</Title>
                         <div className="CON-quick-links">
-                            <a href="/faq">Frequently Asked Questions</a>
-                            <a href="/privacy">Privacy Policy</a>
-                            <a href="/terms">Terms of Service</a>
-                            <a href="/support">Support Center</a>
+                            <a href="/Student_connect/faq">Frequently Asked Questions</a>
+                            <a href="/Student_connect/privacy">Privacy Policy</a>
+                            <a href="/Student_connect/terms">Terms of Service</a>
+                            <a href="/Student_connect/support">Support Center</a>
                         </div>
 
                         <Divider />
@@ -235,7 +235,7 @@ const Contact = () => {
                                 </div>
                             ))}
                         </div>
-                        <Button type="link" href="/faq" className="CON-view-all-faq">
+                        <Button type="link" href="/Student_connect/faq" className="CON-view-all-faq">
                             View All FAQs →
                         </Button>
                     </Card>

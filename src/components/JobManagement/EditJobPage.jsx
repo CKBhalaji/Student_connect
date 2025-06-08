@@ -49,7 +49,7 @@ const EditJobPage = () => {
         });
       } catch (error) {
         console.error('Error fetching job:', error);
-        navigate('/recruiter-dashboard');
+        navigate('/Student_connect/recruiter-dashboard');
       }
     };
 
@@ -83,7 +83,7 @@ const EditJobPage = () => {
     // API call would go here to update the job
     console.log('Updating job:', job);
     message.success('Job updated successfully!');
-    navigate('/recruiter-manage-jobs');
+    navigate('/Student_connect/recruiter-manage-jobs');
   };
 
   const handleStatusChange = (newStatus) => {
@@ -292,7 +292,7 @@ const EditJobPage = () => {
           <button 
             type="button"
             className="CJP-btn btn-outline" 
-            onClick={() => navigate('/recruiter-manage-jobs')}
+            onClick={() => navigate('/Student_connect/recruiter-manage-jobs')}
           >
             Cancel
           </button>

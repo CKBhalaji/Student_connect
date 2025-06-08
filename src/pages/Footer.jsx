@@ -22,30 +22,30 @@ const Footer = () => {
           <div className="FO-footer-col">
             <h4 className="FO-footer-heading">For Students</h4>
             <ul className="FO-footer-links">
-              <li><Link to="/login?role=student">Dashboard</Link></li>
-              <li><Link to="/jobs">Find Jobs</Link></li>
-              <li><Link to="/jobs">Internships</Link></li>
-              <li><Link to="/resources">Career Resources</Link></li>
+              <li><Link to="/Student_connect/login?role=student">Dashboard</Link></li>
+              <li><Link to="/Student_connect/jobs">Find Jobs</Link></li>
+              <li><Link to="/Student_connect/jobs">Internships</Link></li>
+              <li><Link to="/Student_connect/resources">Career Resources</Link></li>
             </ul>
           </div>
 
           <div className="FO-footer-col">
             <h4 className="FO-footer-heading">For Recruiters</h4>
             <ul className="FO-footer-links">
-              <li><Link to="/login?role=recruiter">Dashboard</Link></li>
-              <li><Link to="/create-job">Post a Job</Link></li>
-              <li><Link to="/pricing">Pricing</Link></li>
-              <li><Link to="/recruiter-resources">Recruiter Resources</Link></li>
+              <li><Link to="/Student_connect/login?role=recruiter">Dashboard</Link></li>
+              <li><Link to="/Student_connect/create-job">Post a Job</Link></li>
+              <li><Link to="/Student_connect/pricing">Pricing</Link></li>
+              <li><Link to="/Student_connect/recruiter-resources">Recruiter Resources</Link></li>
             </ul>
           </div>
 
           <div className="FO-footer-col">
             <h4 className="FO-footer-heading">Company</h4>
             <ul className="FO-footer-links">
-              <li><Link to="/about-us">About Us</Link></li>
-              <li><Link to="/blog">Blog</Link></li>
-              <li><Link to="/careers">Careers</Link></li>
-              <li><Link to="/contact">Contact</Link></li>
+              <li><Link to="/Student_connect/about-us">About Us</Link></li>
+              <li><Link to="/Student_connect/blog">Blog</Link></li>
+              <li><Link to="/Student_connect/careers">Careers</Link></li>
+              <li><Link to="/Student_connect/contact">Contact</Link></li>
             </ul>
           </div>
         </div>
@@ -55,9 +55,9 @@ const Footer = () => {
             © {new Date().getFullYear()} {APP_NAME}. All rights reserved.
           </div>
           <div className="FO-legal-links">
-            <Link to="/privacy-policy">Privacy Policy</Link>
-            <Link to="/terms-of-service">Terms of Service</Link>
-            <Link to="/cookies-policy">Cookie Policy</Link>
+            <Link to="/Student_connect/privacy-policy">Privacy Policy</Link>
+            <Link to="/Student_connect/terms-of-service">Terms of Service</Link>
+            <Link to="/Student_connect/cookies-policy">Cookie Policy</Link>
           </div>
         </div>
       </div>

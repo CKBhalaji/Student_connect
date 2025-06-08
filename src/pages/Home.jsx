@@ -22,6 +22,11 @@ import {
   SolutionOutlined  // For recruiter icon
 } from '@ant-design/icons';
 import { APP_NAME} from '../config/constants';
+import ill from '../assets/images/hero-illustration.svg';
+import dash from '../assets/images/dashboard-preview.png';
+// import stu from '../assets/images/student.svg';
+// import rec from '../assets/images/recruiter.svg';
+
 
 const AnimatedSection = ({ children }) => {
   const [ref, inView] = useInView({
@@ -113,12 +118,12 @@ const Home = () => {
               Find your dream internship or discover exceptional candidates.
             </p>
             <div className="HO-cta-buttons">
-              <Link to="/register?role=student" className="HO-primary-btn"><ReadOutlined />Get Started as Student</Link>
-              <Link to="/register?role=recruiter" className="HO-secondary-btn"><SolutionOutlined />I'm a Recruiter</Link>
+              <Link to="/Student_connect/register?role=student" className="HO-primary-btn"><ReadOutlined />Get Started as Student</Link>
+              <Link to="/Student_connect/register?role=recruiter" className="HO-secondary-btn"><SolutionOutlined />I'm a Recruiter</Link>
             </div>
           </div>
           <div className="HO-hero-image">
-            <img src="/images/hero-illustration.svg" alt="Career connection illustration" />
+            <img src={ill} alt="Career connection illustration" />
           </div>
         </section>
       </AnimatedSection>
@@ -156,10 +161,10 @@ const Home = () => {
               Our intuitive dashboard gives you complete control over your job search or recruitment process.
               Manage applications, track status, and get real-time updates.
             </p>
-            <Link to="/register" className="HO-primary-btn">Try Demo</Link>
+            <Link to="/Student_connect/register" className="HO-primary-btn">Try Demo</Link>
           </div>
           <div className="HO-demo-image">
-            <img src="/images/dashboard-preview.png" alt="Dashboard preview" />
+            <img src={dash} alt="Dashboard preview" />
           </div>
         </section>
       </AnimatedSection>
@@ -174,7 +179,7 @@ const Home = () => {
                 "{APP_NAME} helped me land my dream internship at a Fortune 500 company. The platform made the application process so smooth!"
               </p>
               <div className="HO-testimonial-author">
-                <img src="/images/student-avatar.jpg" alt="Student" className="HO-author-avatar" />
+                <img src="https://randomuser.me/api/portraits/women/82.jpg" alt="Student" className="HO-author-avatar" />
                 <div>
                   <p className="HO-author-name">Sarah Johnson <ReadOutlined /></p>
                   <p className="HO-author-title">Computer Science Student</p>
@@ -186,7 +191,7 @@ const Home = () => {
                 "We've found our best interns through {APP_NAME}. The quality of candidates and the recruitment tools save us countless hours."
               </p>
               <div className="HO-testimonial-author">
-                <img src="/images/recruiter-avatar.jpg" alt="Recruiter" className="HO-author-avatar" />
+                <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Recruiter" className="HO-author-avatar" />
                 <div>
                   <p className="HO-author-name">Michael Chen <TeamOutlined /></p>
                   <p className="HO-author-title">Talent Acquisition, TechCorp</p>
@@ -241,7 +246,7 @@ const Home = () => {
           </div>
 
           <div className="HO-view-all-jobs">
-            <Link to="/jobs" className="HO-primary-btn">
+            <Link to="/Student_connect/jobs" className="HO-primary-btn">
               View All Opportunities
             </Link>
           </div>
@@ -252,7 +257,7 @@ const Home = () => {
       <AnimatedSection>
         <section className="HO-cta-section">
           <h2><CheckCircleOutlined />Ready to take the next step in your career?</h2>
-          <Link to="/register" className="HO-primary-btn large-btn"><RocketOutlined />Join {APP_NAME} Today</Link>
+          <Link to="/Student_connect/register" className="HO-primary-btn large-btn"><RocketOutlined />Join {APP_NAME} Today</Link>
         </section>
       </AnimatedSection>
     </div>

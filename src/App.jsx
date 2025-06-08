@@ -54,44 +54,44 @@ function App() {
             <Routes>
               {/* Home Pages */}
               <Route path="/Student_connect" element={<Home />} />
-              <Route path="/login" element={<Login />} />
-              <Route path="/register" element={<Register />} />
+              <Route path="/Student_connect/login" element={<Login />} />
+              <Route path="/Student_connect/register" element={<Register />} />
               {/* Admin Pages */}
-              <Route path="/admin-panel" element={<AdminPanel />} />
-              <Route path="/admin-users" element={<AdminUserManagement />} />
-              <Route path="/admin-jobs" element={<AdminJobManagement />} />
-              <Route path="/admin-settings" element={<AdminSettings />} />
-              <Route path="/admin-analytics" element={<AdminAnalytics />} />
-              <Route path="/admin-audit-log" element={<AuditLog />} />
+              <Route path="/Student_connect/admin-panel" element={<AdminPanel />} />
+              <Route path="/Student_connect/admin-users" element={<AdminUserManagement />} />
+              <Route path="/Student_connect/admin-jobs" element={<AdminJobManagement />} />
+              <Route path="/Student_connect/admin-settings" element={<AdminSettings />} />
+              <Route path="/Student_connect/admin-analytics" element={<AdminAnalytics />} />
+              <Route path="/Student_connect/admin-audit-log" element={<AuditLog />} />
               {/* Jobs Pages */}
-              <Route path="/jobs" element={<Jobs />} />
-              <Route path="/create-job" element={<CreateJobPage />} />
-              <Route path="/jobs/:id" element={<JobDetails />} />
-              <Route path="/jobs/:id/edit" element={<EditJobPage />} />
-              <Route path="/edit-job/:id" element={<EditJobPage />} />
+              <Route path="/Student_connect/jobs" element={<Jobs />} />
+              <Route path="/Student_connect/create-job" element={<CreateJobPage />} />
+              <Route path="/Student_connect/jobs/:id" element={<JobDetails />} />
+              <Route path="/Student_connect/jobs/:id/edit" element={<EditJobPage />} />
+              <Route path="/Student_connect/edit-job/:id" element={<EditJobPage />} />
               {/* Student Pages */}
-              <Route path="/student-dashboard" element={<StudentDashboard />} />
-              <Route path="/student_profile" element={<Student_Profile />} />
-              <Route path="/student-applications" element={<StudentApplications />} />
-              <Route path="/student-resources" element={<StudentResources />} />
-              <Route path="/student-company-deadline" element={<StudentCompanyDeadline />} />
+              <Route path="/Student_connect/student-dashboard" element={<StudentDashboard />} />
+              <Route path="/Student_connect/student_profile" element={<Student_Profile />} />
+              <Route path="/Student_connect/student-applications" element={<StudentApplications />} />
+              <Route path="/Student_connect/student-resources" element={<StudentResources />} />
+              <Route path="/Student_connect/student-company-deadline" element={<StudentCompanyDeadline />} />
               {/* Recruiter Pages */}
-              <Route path="/recruiter-dashboard" element={<RecruiterDashboard />} />
-              <Route path="/recruiter_profile" element={<Recruiter_Profile />} />
-              <Route path="/recruiter-manage-jobs" element={<RecruiterManageJobs />} />
-              <Route path="/recruiter-analytics" element={<RecruiterAnalytics />} />
-              <Route path="/recruiter-student-applications" element={<RecruiterStudentApplications />} />
-              <Route path="/recruiter-schedule-interview" element={<RecruiterScheduleInterview />} />
-              <Route path="/recruiter-schedule-interview_example" element={<RecruiterScheduleInterview_example />} />
+              <Route path="/Student_connect/recruiter-dashboard" element={<RecruiterDashboard />} />
+              <Route path="/Student_connect/recruiter_profile" element={<Recruiter_Profile />} />
+              <Route path="/Student_connect/recruiter-manage-jobs" element={<RecruiterManageJobs />} />
+              <Route path="/Student_connect/recruiter-analytics" element={<RecruiterAnalytics />} />
+              <Route path="/Student_connect/recruiter-student-applications" element={<RecruiterStudentApplications />} />
+              <Route path="/Student_connect/recruiter-schedule-interview" element={<RecruiterScheduleInterview />} />
+              <Route path="/Student_connect/recruiter-schedule-interview_example" element={<RecruiterScheduleInterview_example />} />
               {/* Other Pages */}
-              <Route path="/faq" element={<FAQ />} />
-              <Route path="/about-us" element={<AboutUs />} />
-              <Route path="/blog" element={<Blog />} />
-              <Route path="/contact" element={<Contact />} />
-              <Route path="/careers" element={<Career />} />
-              <Route path="/terms-of-service" element={<TermsOfService />} />
-              <Route path="/privacy-policy" element={<PrivacyPolicy />} />
-              <Route path="/cookies-policy" element={<CookiesPolicy />} />
+              <Route path="/Student_connect/faq" element={<FAQ />} />
+              <Route path="/Student_connect/about-us" element={<AboutUs />} />
+              <Route path="/Student_connect/blog" element={<Blog />} />
+              <Route path="/Student_connect/contact" element={<Contact />} />
+              <Route path="/Student_connect/careers" element={<Career />} />
+              <Route path="/Student_connect/terms-of-service" element={<TermsOfService />} />
+              <Route path="/Student_connect/privacy-policy" element={<PrivacyPolicy />} />
+              <Route path="/Student_connect/cookies-policy" element={<CookiesPolicy />} />
             </Routes>
           </main>
           <Footer />
